@@ -64,7 +64,15 @@ header nav ul li a:hover {
     transform: scale(1.1);
 }
 
-/* メインコンテンツ */
+/* メイン画像のスタイル */
+/* メイン画像のスタイル */
+.main-image {
+    width: 100%;         /* 画像の幅を100%に設定（画面幅にフィット） */
+    max-width: 100%;     /* 画像の最大幅も100%に制限 */
+    height: auto;        /* 画像の縦横比を維持して自動調整 */
+    margin-bottom: 20px; /* 画像とテキストの間に余白を作成 */
+}
+
 main {
     flex: 1;
     display: flex;
