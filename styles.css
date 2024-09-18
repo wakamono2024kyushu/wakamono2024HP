@@ -90,7 +90,7 @@ main h1 {
 
 /* フッター */
 footer {
-    background-color: #7c9091;
+    background-color: #5d7283;
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -113,12 +113,12 @@ footer a {
 }
 
 footer a i {
-    font-size: 24px; /* アイコンの大きさを調整 */
-    margin-right: 8px; /* アイコンと文字の間にスペースを追加 */
+    font-size: 36px; /* アイコンの大きさを調整 */
+    margin-right: 10px; /* アイコンと文字の間にスペースを追加 */
 }
 
 footer a span {
-    font-size: 14px; /* テキストの大きさを調整 */
+    font-size: 20px; /* テキストの大きさを調整 */
 }
 
 footer a:hover {
