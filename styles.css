@@ -16,63 +16,7 @@ body {
     align-items: center; /* 中央揃え */
 }
 
-/* ヘッダー */
-header {
-    width: 100%;
-    height: 22vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to right, hsl(202, 100%, 69%), #38d47e);
-    color: #fff;
-    padding: 15px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-}
 
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-}
-
-header nav ul li {
-    margin: 0 20px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 24px;
-    padding: 10px 20px;
-    border-radius: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: background 0.3s ease, transform 0.3s ease;
-}
-
-header nav ul li a i {
-    font-size: 24px;
-    margin-bottom: 0px;
-}
-
-header nav ul li a span {
-    font-size: 12px;
-    margin-top: 0px;
-}
-
-header nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    color: #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transform: scale(1.1);
-}
 /* カスタムh1のスタイル */
 main h1 {
     font-size: 4.0rem;
@@ -118,43 +62,7 @@ main p {
     margin-bottom: 20px;
 }
 
-/* フッターのスタイル */
-footer {
-    background-color: #5d7283;  /* フッターの背景色 */
-    color: #fff;                /* テキストの色 */
-    width: 100%;                /* フッターを画面幅いっぱいに */
-    padding: 10px 0;            /* 上下の余白を20pxに設定 */
-    margin-top: auto;           /* フッターをページの最下部に配置 */
-}
 
-footer p {
-    display: flex;              /* アイコン全体を横並びに */
-    justify-content: center;     /* 中央に揃える */
-    align-items: center;         /* 垂直方向に中央揃え */
-}
-
-footer a {
-    color: #fff;                 /* リンクの色 */
-    text-decoration: none;       /* 下線を除去 */
-    font-size: 18px;             /* フォントサイズを設定 */
-    display: flex;               /* アイコンとテキストを横並びに */
-    align-items: center;         /* 垂直方向に中央揃え */
-    margin: 0 15px;              /* 各リンク間に余白を追加 */
-}
-
-footer a i {
-    font-size: 20px;             /* アイコンのサイズを36pxに設定 */
-    margin-right: 10px;          /* アイコンとテキストの間に余白を追加 */
-}
-
-footer a span {
-    font-size: 20px;             /* テキストのサイズを設定 */
-}
-
-footer a:hover {
-    text-decoration: none;       /* 下線は引かない */
-    color: #ddd;                 /* ホバー時のテキスト色を変更 */
-}
 
 /* スクロールバーを非表示 */
 .overflow-auto::-webkit-scrollbar {
