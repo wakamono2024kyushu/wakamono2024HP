@@ -6,44 +6,177 @@
     <title>ラボ わかもの2024 in 九州</title>
     <!-- Font Awesomeの読み込み -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+     <!-- Bootstrap JS (Optional: For components like modals) -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- CSSの読み込み -->
+     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <!-- ヘッダー -->
-    <header>
+    <header class="bg-primary text-white d-flex flex-column justify-content-center" style="height: 22vh;">
         <nav>
-            <ul>
-                <li><a href="https://wakamono2024kyushu.com/"><i class="fas fa-home"></i><span>ホーム</span></a></li>
-                <li><a href="fes.html"><i class="fas fa-video"></i><span>フェスティバル</span></a></li>
-                <li><a href="camp.html"><i class="fas fa-campground"></i><span>合宿</span></a></li>
-                <li><a href="staff.html"><i class="fas fa-users"></i><span>実行委員</span></a></li>
-                <li><a href="letter.html"><i class="fas fa-envelope"></i><span>憧レター</span></a></li>
-                <li><a href="mypage.html"><i class="fas fa-user-circle"></i><span>マイページ</span></a></li>
+            <ul class="nav justify-content-center">
+                <li class="nav-item mx-3">
+                    <a href="https://wakamono2024kyushu.com/" class="nav-link text-white text-center">
+                        <i class="fas fa-home fs-3"></i><br><span>ホーム</span>
+                    </a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a href="fes.html" class="nav-link text-white text-center">
+                        <i class="fas fa-video fs-3"></i><br><span>フェスティバル</span>
+                    </a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a href="camp.html" class="nav-link text-white text-center">
+                        <i class="fas fa-campground fs-3"></i><br><span>合宿</span>
+                    </a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a href="staff.html" class="nav-link text-white text-center">
+                        <i class="fas fa-users fs-3"></i><br><span>実行委員</span>
+                    </a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a href="letter.html" class="nav-link text-white text-center">
+                        <i class="fas fa-envelope fs-3"></i><br><span>憧レター</span>
+                    </a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a href="mypage.html" class="nav-link text-white text-center">
+                        <i class="fas fa-user-circle fs-3"></i><br><span>マイページ</span>
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
 
     <!-- メインコンテンツ -->
-    <main>
-        <img src="ロゴ.jpg" alt="イベント画像" class="main-image">
-        <h1>coming soon</h1>
+    <main class="container my-5 text-center">
+        
+        <!-- イベントタイトルとお知らせ -->
+        <h1 class="fw-bold">わかもの2024 in 九州</h1>
+        <!-- <h2 class="text-muted">coming soon</h2> -->
+
+        <!-- 画像の挿入 -->
+        <img src="ロゴ.jpg" alt="イベント画像" class="main-image img-fluid mb-4">
+        
+        <!-- 新しい見出し -->
+        <section class="my-5">
+            <h2 class="display-6">全体テーマ</h2>
+            <p class="lead">しあわせ</p>
+            <p>いまもこれからも私たちは幸せに生きる。わかものを通して、たくさんの幸せを感じ、自分自身の幸せについて考えよう。</p>   
+           
+            <!-- 詳しく読むボタン -->
+            <div class="text-end">
+                <a href="theme.html" class="btn btn-primary">詳しく読む</a>
+            </div>
+        </section>
+
+        <section class="my-5">
+            <h2 class="display-6">News</h2>
+            <!-- 横スクロール可能なカード -->
+            <div class="d-flex overflow-auto" style="white-space: nowrap;">
+                <!-- カード1 -->
+                <div class="card me-3" style="min-width: 300px; max-width: 300px; height: 400px; flex-shrink: 0;">
+                    <img src="ダウンロード.png" class="card-img-top" alt="ニュース1画像" style="height: 180px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">NEWS</h5>
+                        <p class="card-text" style="overflow: hidden; text-overflow: ellipsis;">coming soon</p>
+                        <a href="#" class="btn btn-primary">続きを読む</a>
+                    </div>
+                </div>
+    
+                <!-- カード2
+                <div class="card me-3" style="min-width: 300px; max-width: 300px; height: 400px; flex-shrink: 0;">
+                    <img src="ダウンロード.png" class="card-img-top" alt="ニュース2画像" style="height: 180px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">NEWS</h5>
+                        <p class="card-text" style="overflow: hidden; text-overflow: ellipsis;">coming soon</p>
+                        <a href="#" class="btn btn-primary">続きを読む</a>
+                    </div>
+                </div> -->
+    
+                <!-- カード3
+                <div class="card me-3" style="min-width: 300px; max-width: 300px; height: 400px; flex-shrink: 0;">
+                    <img src="ダウンロード.png" class="card-img-top" alt="ニュース3画像" style="height: 180px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">NEWS</h5>
+                        <p class="card-text" style="overflow: hidden; text-overflow: ellipsis;">comingsoon</p>
+                        <a href="#" class="btn btn-primary">続きを読む</a>
+                    </div>
+                </div> -->
+    
+                <!-- カード4 -->
+                <!-- <div class="card me-3" style="min-width: 300px; max-width: 300px; height: 400px; flex-shrink: 0;">
+                    <img src="news4.jpg" class="card-img-top" alt="ニュース4画像" style="height: 180px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">ニュース4</h5>
+                        <p class="card-text" style="overflow: hidden; text-overflow: ellipsis;">ここにニュース4の概要が表示されます。</p>
+                        <a href="#" class="btn btn-primary">続きを読む</a>
+                    </div>
+                </div> -->
+    
+                <!-- カード5
+                <div class="card me-3" style="min-width: 300px; max-width: 300px; height: 400px; flex-shrink: 0;">
+                    <img src="news5.jpg" class="card-img-top" alt="ニュース5画像" style="height: 180px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">ニュース5</h5>
+                        <p class="card-text" style="overflow: hidden; text-overflow: ellipsis;">ここにニュース5の概要が表示されます。</p>
+                        <a href="#" class="btn btn-primary">続きを読む</a>
+                    </div>
+                </div> -->
+    
+                <!-- カード6
+                <div class="card me-3" style="min-width: 300px; max-width: 300px; height: 400px; flex-shrink: 0;">
+                    <img src="news6.jpg" class="card-img-top" alt="ニュース6画像" style="height: 180px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">ニュース6</h5>
+                        <p class="card-text" style="overflow: hidden; text-overflow: ellipsis;">ここにニュース6の概要が表示されます。</p>
+                        <a href="#" class="btn btn-primary">続きを読む</a>
+                    </div>
+                </div> -->
+
+                <!-- カード7
+                <div class="card me-3" style="min-width: 300px; max-width: 300px; height: 400px; flex-shrink: 0;">
+                    <img src="news7.jpg" class="card-img-top" alt="ニュース7画像" style="height: 180px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">ニュース6</h5>
+                        <p class="card-text" style="overflow: hidden; text-overflow: ellipsis;">ここにニュース7の概要が表示されます。</p>
+                        <a href="#" class="btn btn-primary">続きを読む</a>
+                    </div>
+                </div> -->
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <p><!-- Instagramアイコン -->
-            <a href="https://www.instagram.com/labo_wakamono?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-                <i class="fab fa-instagram"></i><span> Instagram</span>
-            </a>
-            <!-- LINEアイコン -->
-            <a href="https://line.me/" target="_blank">
-                <i class="fab fa-line"></i><span>LINE</span>
-            </a>
-            <!-- DMアイコン (メールリンク) -->
-             <a href="mailto:wakamonokyushu2024@gmail.com">
-                <i class="fas fa-envelope"></i><span>DM</span>
-            </a>
-        </p>
+    <!-- フッター -->
+    <footer class="w-100">
+        <div class="container">
+            <p class="d-flex justify-content-center align-items-center">
+                <!-- Instagramアイコン -->
+                <a href="https://www.instagram.com/labo_wakamono?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="text-white mx-3">
+                    <i class="fab fa-instagram"></i><span> Instagram</span>
+                </a>
+                <!-- LINEアイコン -->
+                <a href="https://line.me/" target="_blank" class="text-white mx-3">
+                    <i class="fab fa-line"></i><span>LINE</span>
+                </a>
+                <!-- DMアイコン (メールリンク) -->
+                <a href="mailto:wakamonokyushu2024@gmail.com" class="text-white mx-3">
+                    <i class="fas fa-envelope"></i><span>DM</span>
+                </a>
+            </p>
+        </div>
     </footer>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
 </body>
 </html>
+
+
