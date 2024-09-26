@@ -5,8 +5,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right, hsl(202, 100%, 69%), #38d47e);
-    color: #fff;
+    background: linear-gradient(to right, #4abdbd, #5fa2da);
+    color: #e6e3e3;
     padding: 15px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: fixed;
