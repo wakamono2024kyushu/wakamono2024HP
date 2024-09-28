@@ -7,7 +7,7 @@
 
 /* 背景と全体のレイアウト */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
     line-height: 1.6;
     min-height: 100vh;
     background-color: hwb(168 95% 1%);
@@ -16,19 +16,10 @@ body {
     align-items: center; /* 中央揃え */
 }
 
-
-/* カスタムh1のスタイル */
-main h1 {
-    font-size: 4.0rem;
-    color: #333;
-    margin-top: 150px;
-    text-align: center;
-}
-
 /* メイン画像のカスタムスタイル */
 .main-image {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
     height: auto;
     margin: 70px auto;
     display: block;
