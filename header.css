@@ -8,7 +8,7 @@
     top: 0;
     left: 0;
     z-index: 1000;
-    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    font-family: "Zen Kurenaido", sans-serif;
     height: 75px;
 }
 
@@ -123,6 +123,30 @@ footer a:hover {
     text-decoration: none;       /* 下線は引かない */
     color: #ddd;                 /* ホバー時のテキスト色を変更 */
 }
+
+フォントの設定
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 900 */
+.noto-serif-jp-uniquifier {
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+.noto-sans-jp-uniquifier {
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+.zen-kurenaido-regular {
+    font-family: "Zen Kurenaido", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
 
 @media (max-width: 768px)  {
     header {

@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Zen+Kurenaido&display=swap" rel="stylesheet">
     <!-- CSSの読み込み -->
     <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="login.css">
 
 </head>
 <body>
@@ -24,14 +24,14 @@
     <nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="logo.png" class="mx-2" width="60" height="60">テーマ
+                <img src="logo.png" class="mx-2" width="60" height="60">マイページ
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">テーマ</h5>
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">マイページ</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -84,7 +84,24 @@
 
 <!-- メインコンテンツ -->
 <main>
-    <h1>coming soon</h1>
+    <div class="login-container">
+        <div class="form-box">
+            <h2>マイページログイン</h2>
+            <form action="/mypage" method="POST">
+                <div class="input-box">
+                    <label for="username"><i class="fas fa-user"></i> ユーザーネーム</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                
+                <div class="input-box">
+                    <label for="birthdate"><i class="fas fa-calendar-alt"></i> 生年月日 (0000/00/00)</label>
+                    <input type="text" id="birthdate" name="birthdate" placeholder="YYYY/MM/DD" pattern="\d{4}/\d{2}/\d{2}" required>
+                </div>
+            
+                <button type="submit">ログイン</button>
+            </form>
+        </div>
+    </div>
 </main>
 
 <!-- フッター -->
