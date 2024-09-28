@@ -89,7 +89,7 @@ form {
     transition: color 0.3s ease;
 }
 
-button {
+.login-container button {
     padding: 12px 20px;
     background: linear-gradient(135deg, #007BFF, #38d47e);
     color: white;
@@ -101,7 +101,7 @@ button {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-button:hover {
+.login-container button:hover {
     background: linear-gradient(135deg, #0056b3, #28a745);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
