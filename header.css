@@ -21,10 +21,16 @@
 .navbar-nav .nav-link {
     font-size: 1.2rem;
 }
+.offcanvas-title {
+    font-size: 1.4rem;
+}
+
 
 .offcanvas-header {
+    height: 75px;
     background: linear-gradient(to right, #4abdbd, #5fa2da);
     color: white;
+    border-bottom: 1px solid #e6e3e3;
 }
 
 .offcanvas-body {
@@ -46,7 +52,7 @@
     display: flex;
     /* flex-direction: column; */
     align-items: center;
-    transition: background 0.3s ease, transform 0.3s ease;
+    transition: 0.3s ease, transform 0.3s ease;
 }
 
 .navbar-nav li a span {
@@ -61,10 +67,6 @@
     color: #fff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transform: scale(1.1);
-}
-
-.offcanvas-title {
-    font-size: 1.4rem;
 }
 
 .form-control {

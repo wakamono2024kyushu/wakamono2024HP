@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ラボ わかもの2024 in 九州</title>
+    <title>ラボ 2024わかもの in 九州</title>
     <!-- Font Awesomeの読み込み -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Bootstrap CSS -->
@@ -20,95 +20,246 @@
 
 </head>
 <body>
-    <!-- 新ヘッダー -->
-    <nav class="navbar navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="logo.png" class="mx-2" width="60" height="60">フェスティバル
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">フェスティバル</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+ <!-- 新ヘッダー -->
+ <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="logo.png" class="mx-2" width="60" height="60">わかものフェスティバル
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">わかものフェスティバル</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body d-flex flex-column">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item mx-3">
+                        <a href="https://wakamono2024kyushu.com/" class="nav-link text-white text-center">
+                            <i class="fas fa-home fs-3"></i><span>ホーム</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a href="fes.html" class="nav-link text-white text-center">
+                            <i class="fas fa-video fs-3"></i><span>フェスティバル</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a href="camp.html" class="nav-link text-white text-center">
+                            <i class="fas fa-campground fs-3"></i><span>合宿</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a href="staff.html" class="nav-link text-white text-center">
+                            <i class="fas fa-users fs-4"></i><span>実行委員</span>
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item mx-3">
+                        <a href="letter.html" class="nav-link text-white text-center">
+                            <i class="fas fa-envelope fs-2"></i><span>憧レター</span>
+                        </a>
+                    </li> -->
+                    <li class="nav-item mx-3">
+                        <a href="ticket.html" class="nav-link text-white text-center">
+                            <i class="fas fa-ticket fs-3"></i><span>チケット購入</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a href="kyushu.html" class="nav-link text-white text-center">
+                            <i class="fa-solid fa-map-location-dot fs-3"></i><span>九州</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a href="login.html" class="nav-link text-white text-center">
+                            <i class="fas fa-user-circle fs-3"></i><span>マイページ</span>
+                        </a>
+                    </li>
+                </ul>
+                     <!-- スペーサー -->
+                <div class="flex-grow-1"></div>
+
+                    <!-- 下部に配置するナビゲーションリンク -->
+                <ul class="navbar-nav mb-3">
+                    <li class="nav-item mx-3">
+                        <a href="sponser.html" class="nav-link text-white text-center">
+                            <i class="fas fa-handshake fs-3.25"></i><span>スポンサー</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a href="q&a.html" class="nav-link text-white text-center">
+                            <i class="fas fa-question-circle fs-2"></i><span>  Q&A</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+
+  
+    <!-- メインコンテンツ -->
+    <main class="container my-5">
+        <!-- 合宿のタイトル
+        <section class="text-center mb-5">
+            <h1 class="display-4 fw-bold text-primary custom-heading">わかもの合宿</h1>
+        </section> -->
+
+        <div id="carouselExampleCaptions" class="carousel slide mt-5">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="ロゴ.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-block">
+                  <h5>発表者団体①</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
                 </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item mx-3">
-                            <a href="https://wakamono2024kyushu.com/" class="nav-link text-white text-center">
-                                <i class="fas fa-home fs-3"></i><span>ホーム</span>
-                            </a>
+              </div>
+              <div class="carousel-item">
+                <img src="ロゴ.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-block">
+                  <h5>発表者団体②</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="ロゴ.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-block">
+                  <h5>発表者団体③</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="cp_box1">
+            <h2 class="main-theme display-6">フェスティバルスローガン</h2>
+            <input id="cp01" type="checkbox">
+            <label for="cp01"></label>
+            <div class="cp_container">
+              <h1 class="theme">みんなでつくろう “憧れ”の舞台</h1>
+              <p>ラボっ子としての幸せのひとつは、テーマ活動の魅力に気づくこと、心の底から楽しむことだと私たちは考える。</p>
+              <br></br>
+              <p>テーマ活動の魅力に気づき、楽しむためにはどうすればいいのか。</p>
+              <p>私たちはそのための行動の原動力を“憧れ”に見出す。</p>
+              <br></br>
+              <p>発表の場には“憧れ”の連鎖があると考える。</p>
+            <p>その連鎖には、「舞台に立つ人」と「発表を観る人」の2者がいる。</p>
+                <p>私たちは今回のフェスティバルで「舞台に立つ人」には、“憧れ”を存分に表現してほしい。「発表を観る人」には、“憧れ”を見つけてほしい。</p>
+                <br></br>
+                <p>また、“憧れ”は過去、現在、未来へと連鎖していく。きっと今回のフェスティバルで「舞台に立つ人」も過去に“憧れ”を見つけ、現在、”憧れ”を表現している。
+                    そして今回「発表を観る人」は、“憧れ”を原動力として、未来で“憧れ”を表現する人になる。</p>
+                <br></br>
+                <p>“憧れ”は1人1人のテーマ活動における幸せに繋がる。 </p>
+                <p>たくさんのラボっ子にとって“憧れ”る舞台を。 </p>
+                <p>かつて私たち大学生が“憧れ”たあの舞台を。</p>
+                <p>そんな素晴らしい“憧れ”の舞台を、わかものフェスティバルに関わる全ての人と作り上げていく。</p>
+            </div>
+          </div>
+
+        <!-- 合宿の概要 -->
+        <section class="bg-light p-4 rounded shadow mt-5">
+            <div class="row">
+                <div class="col-md-7">
+                    <h2 class="text-center text-info custom-heading">概要</h2>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-light">
+                            <strong>日時：</strong>2025年2月23日(日)
                         </li>
-                        <li class="nav-item mx-3">
-                            <a href="fes.html" class="nav-link text-white text-center">
-                                <i class="fas fa-video fs-3"></i><span>フェスティバル</span>
+                        <li class="list-group-item bg-light">
+                            <strong>会場：</strong>飯塚市文化会館(イイヅカコスモスコモン)
+                            <a href="https://maps.app.goo.gl/xvCN5uJiMiDrF6N56" target="_blank" class="text-primary">
+                                <i class="fas fa-map-location-dot fs-4 map-icon"></i>MAP
                             </a>
+                            <br>　　　※最大収容人数1504人</br>
                         </li>
-                        <li class="nav-item mx-3">
-                            <a href="camp.html" class="nav-link text-white text-center">
-                                <i class="fas fa-campground fs-3"></i><span>合宿</span>
-                            </a>
+                        <li class="list-group-item bg-light">
+                            <strong>チケット代：</strong>1,000円以下を予定
                         </li>
-                        <li class="nav-item mx-3">
-                            <a href="staff.html" class="nav-link text-white text-center">
-                                <i class="fas fa-users fs-4"></i><span>実行委員</span>
-                            </a>
-                        </li>
-                        <li class="nav-item mx-3">
-                            <a href="letter.html" class="nav-link text-white text-center">
-                                <i class="fas fa-envelope fs-2"></i><span>憧レター</span>
-                            </a>
-                        </li>
-                        <li class="nav-item mx-3">
-                            <a href="ticket.html" class="nav-link text-white text-center">
-                                <i class="fas fa-ticket fs-3"></i><span>チケット購入</span>
-                            </a>
-                        </li>
-                        <li class="nav-item mx-3">
-                            <a href="kyushu.html" class="nav-link text-white text-center">
-                                <i class="fa-solid fa-map-location-dot fs-3"></i><span>九州</span>
-                            </a>
-                        </li>
-                        <li class="nav-item mx-3">
-                            <a href="login.html" class="nav-link text-white text-center">
-                                <i class="fas fa-user-circle fs-3"></i><span>マイページ</span>
-                            </a>
+                        <li class="list-group-item bg-light">
+                            <strong>アクセス：</strong>JR九州福北ゆたか線　飯塚駅から徒歩約15分
+                            <br>　　　　　飯塚バスターミナルから徒歩約10分</br>
+                            
                         </li>
                     </ul>
                 </div>
+                <div class="col-md-5">
+                    <!-- Googleマップの埋め込み -->
+                    <div class="map-container mt-3">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6643.691156812533!2d130.68215377434052!3d33.63524573963624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35417e37e563bf79%3A0xab3d42724ef807cd!2z44Kk44Kk44OF44Kr44Kz44K544Oi44K544Kz44Oi44Oz!5e0!3m2!1sja!2sjp!4v1728311974215!5m2!1sja!2sjp" 
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
             </div>
-        </div>
-    </nav>
+        </section>
 
-    <!-- メインコンテンツ -->
-    <main>
-        <h1>coming soon</h1>
+        <!-- 注意事項
+        <section class="bg-white mt-2 p-1 rounded shadow">
+            <h3 class="text-center text-warning custom-heading">注意事項</h3>
+            <ul class="list-group list-group-flush"></ul>
+                
+        </section> -->
+
+        <!-- 申し込みボタン -->
+        <div class="text-center mt-5">
+            <a href="ticket.html" class="btn btn-primary btn-lg" target="_blank">チケット購入</a>
+        </div>
+
+
+        
+
     </main>
-    
-    <!-- フッター -->
-    <footer class="w-100">
-        <div class="container">
-            <p class="d-flex justify-content-center align-items-center">
-                <!-- Instagramアイコン -->
-                <a href="https://www.instagram.com/labo_wakamono?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="text-white mx-3">
-                    <i class="fab fa-instagram"></i><span> Instagram</span>
-                </a>
-                <!-- LINEアイコン -->
-                <a href="https://line.me/" target="_blank" class="text-white mx-3">
-                    <i class="fab fa-line"></i><span>LINE</span>
-                </a>
-                <!-- DMアイコン (メールリンク) -->
-                <a href="mailto:wakamonokyushu2024@gmail.com" class="text-white mx-3">
-                    <i class="fas fa-envelope"></i><span>DM</span>
-                </a>
-            </p>
-        </div>
-    </footer>
 
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+
+    <!-- BootstrapのJavaScriptの読み込み -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- フッター -->
+<footer class="w-100">
+    <div class="container">
+        <p class="d-flex justify-content-center align-items-center">
+            <!-- Instagramアイコン -->
+            <a href="https://www.instagram.com/labo_wakamono?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="text-white mx-3">
+                <i class="fab fa-instagram"></i><span> Instagram</span>
+            </a>
+            <!-- LINEアイコン -->
+            <a href="https://lin.ee/5xKUaVV" target="_blank" class="text-white mx-3">
+                <i class="fab fa-line"></i><span>LINE</span>
+            </a> 
+            <!-- DMアイコン (メールリンク) -->
+            <a href="mailto:wakamonokyushu2024@gmail.com" class="text-white mx-3">
+                <i class="fas fa-envelope"></i><span>DM</span>
+            </a>
+        </p>
+    </div>
+</footer>
+
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 </body>
 </html>

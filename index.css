@@ -45,6 +45,7 @@ body {
 }
 /*しあわせ*/
 .lead {
+    color: #444;
     font-size: 4rem;
     font-weight: bold;
     text-align: center;
@@ -74,6 +75,7 @@ main p {
     display: none;
 }
 .overflow-auto {
+    
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */
 }
