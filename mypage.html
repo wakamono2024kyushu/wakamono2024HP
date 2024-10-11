@@ -88,6 +88,17 @@
 <main>
     <div class="login-container">
         <div class="form-box">
+            <h1>Welcome to My Page</h1>
+            <p>Your user ID is: <span id="userId"></span></p>
+
+            <script>
+                window.onload = function() {
+                    // URLのハッシュ部分からユーザーIDを取得
+                    const userId = window.location.hash.substring(1);
+                    document.getElementById('userId').textContent = userId || 'unknown';
+                };
+            </script>
+
             <h2>マイページログイン</h2>
             <form action="/mypage" method="POST">
                 <div class="input-box">

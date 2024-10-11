@@ -17,6 +17,8 @@
     <!-- CSSの読み込み -->
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="login.css">
+    <!-- ローディングのCSS -->
+    <link rel="stylesheet" href="spinner.css">
 
 </head>
 <body>
@@ -87,7 +89,7 @@
     <div class="login-container">
         <div class="form-box">
             <h2>マイページログイン</h2>
-            <form action="/mypage" method="POST">
+            <form id="loginForm" action="/login" method="POST">
                 <div class="input-box">
                     <label for="username"><i class="fas fa-user"></i> ユーザーネーム</label>
                     <input type="text" id="username" name="username" required>
@@ -102,6 +104,13 @@
             </form>
         </div>
     </div>
+
+    <!-- ローディングアニメーション -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="js/login.js"></script>
 </main>
 
 <!-- フッター -->
