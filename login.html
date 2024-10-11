@@ -17,6 +17,8 @@
     <!-- CSSの読み込み -->
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="login.css">
+    <!-- ローディングのCSS -->
+    <link rel="stylesheet" href="spinner.css">
 
 </head>
 <body>
@@ -101,6 +103,11 @@
                 <button type="submit">ログイン</button>
             </form>
         </div>
+    </div>
+
+    <!-- ローディングアニメーション -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
     </div>
 
     <script src="js/login.js"></script>
