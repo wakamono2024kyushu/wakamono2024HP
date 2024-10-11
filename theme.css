@@ -21,24 +21,18 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    align-items: left;
     background-color: #f4f4f4;
-}
-
-
-main h1 {
-    font-size: 48px;
-    color: #333;
-}
-
-main {
-    padding-top: 80px; /* ヘッダーの高さを考慮 */
+    padding-top: 90px; /* ヘッダーの高さを考慮 */
     padding-bottom: 60px; /* フッターの高さを考慮 */
+    margin-bottom: 70px;
     text-align: left;
 }
 
-h1, h2, h3{
+
+.container {
+    font-size: 20px;
+    color: #333;
     font-family: 'Noto Serif JP', serif; /* 日本語フォントを適用 */
 }
 
