@@ -114,6 +114,73 @@
         <!-- 画像の挿入 -->
         <img src="ロゴ.jpg" alt="イベント画像" class="main-image img-fluid mb-4">
         
+        <!-- カウントダウン表示エリア -->
+        <section id="countdown" class="my-5">
+            <h2 class="display-6">2024わかもの in 九州まであと</h2>
+            <div class="countdown-timer">
+                <div class="countdown-element">
+                    <div class="circle">
+                        <span id="days" class="time">00</span>
+                    </div>
+                    <span class="label">DAYS</span>
+                </div>
+                <div class="countdown-element">
+                    <div class="circle">
+                        <span id="hours" class="time">00</span>
+                    </div>
+                    <span class="label">HOURS</span>
+                </div>
+                <div class="countdown-element">
+                    <div class="circle">
+                        <span id="minutes" class="time">00</span>
+                    </div>
+                    <span class="label">MINUTES</span>
+                </div>
+                <div class="countdown-element">
+                    <div class="circle">
+                        <span id="seconds" class="time">00</span>
+                    </div>
+                    <span class="label">SECONDS</span>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            // イベントの日付を設定
+            const eventDate = new Date('2025-02-23T09:00:00').getTime();
+            
+            // カウントダウンを更新する関数
+            function updateCountdown() {
+                const now = new Date().getTime();
+                const timeRemaining = eventDate - now;
+            
+                // 日・時間・分・秒の計算
+                const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+            
+                // カウントダウンを表示
+                document.getElementById('days').textContent = days;
+                document.getElementById('hours').textContent = hours;
+                document.getElementById('minutes').textContent = minutes;
+                document.getElementById('seconds').textContent = seconds;
+            
+                // イベントが終了した場合の処理
+                if (timeRemaining < 0) {
+                    clearInterval(countdownInterval);
+                    document.getElementById('days').textContent = "00";
+                    document.getElementById('hours').textContent = "00";
+                    document.getElementById('minutes').textContent = "00";
+                    document.getElementById('seconds').textContent = "00";
+                    document.querySelector('.countdown-timer').innerHTML = "<p>イベントが開始されました！</p>";
+                }
+            }
+            
+            // 毎秒カウントダウンを更新
+            const countdownInterval = setInterval(updateCountdown, 1000);
+        </script>
+            
         <!-- 新しい見出し -->
         <section class="my-5">
             <h2 class="main-theme display-6">全体テーマ</h2>

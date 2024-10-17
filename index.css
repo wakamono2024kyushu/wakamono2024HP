@@ -24,6 +24,87 @@ body {
     display: block;
 }
 
+/* カウントダウンタイマーのスタイル */
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* 各要素間のスペース */
+    margin-top: 20px;
+}
+
+.countdown-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 円形のスタイル */
+.circle {
+    width: 130px;
+    height: 130px;
+    border: 2px solid rgba(239, 242, 243, 0.982);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: rgba(41, 110, 249, 0.059);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.circle::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: rgba(13, 73, 164, 0.7);
+    border-radius: 50%;
+    animation: glow 2s infinite ease-in-out;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@keyframes glow {
+    0% {
+        transform: translateX(-50%) scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: translateX(-50%) scale(1.5);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-50%) scale(1);
+        opacity: 0.5;
+    }
+}
+
+/* タイマーの数値 */
+.time {
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.977);
+    z-index: 1;
+}
+
+/* ラベル */
+.label {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: bold;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+
+/* カウントダウンのタイトル */
+#countdown h2 {
+    font-size: 3rem;
+    font-weight:bold;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 30px;
+}
+
 /* カスタムh2のスタイル */
 .main-theme {
     font-size: 2rem;
@@ -34,6 +115,7 @@ body {
     padding-bottom: 10px;
     margin-bottom: 15px;
 }
+
 
 /* ボタンの右下配置を強調 */
 .text-end {
@@ -46,9 +128,10 @@ body {
 /*しあわせ*/
 .lead {
     color: #444;
-    font-size: 4rem;
-    font-weight: bold;
+    font-size: 6rem;
+    font-weight: 1000;
     text-align: center;
+    font-family: "Noto Sans JP", sans-serif;
 }
 
 /* カスタムpのスタイル */
