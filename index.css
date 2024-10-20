@@ -165,7 +165,35 @@ main p {
 
 
         /* 他のスタイルもここに */
-@media (max-width: 768px)  {
+@media (max-width: 768px) {
+    /* 円のサイズを小さく調整 */
+    .circle {
+        width: 80px;
+        height: 80px;
+        border-width: 1px;
+    }
+
+    /* タイマーの数値のフォントサイズを小さく */
+    .time {
+        font-size: 1.5rem;
+    }
+
+    /* ラベルのフォントサイズを小さく */
+    .label {
+        font-size: 0.75rem;
+        margin-top: 5px;
+    }
+
+    /* 各要素間のスペースを狭く */
+    .countdown-timer {
+        gap: 10px; /* 各カウントダウン要素の間隔を狭める */
+    }
+
+    /* タイトルのフォントサイズを小さく */
+    #countdown h2 {
+        font-size: 1.5rem;
+    }
+
     .main-image {
         width: 100%;
         max-width: 1200px;
@@ -180,4 +208,14 @@ main p {
         margin-top: 130px;
         text-align: center;
     }
+
+    .lead {
+        font-size: 3rem;
+        font-weight: 1000;
+        text-align: center;
+        font-family: "Noto Sans JP", sans-serif;
+    }
+
+
+
 }
