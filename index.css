@@ -30,6 +30,7 @@ body {
     justify-content: center;
     gap: 40px; /* 各要素間のスペース */
     margin-top: 20px;
+    font-family: "Noto Sans JP", sans-serif;
 }
 
 .countdown-element {
@@ -103,6 +104,7 @@ body {
     font-weight:bold;
     color: rgba(255, 255, 255, 0.8);
     margin-bottom: 30px;
+    font-family: "Noto Sans JP", sans-serif;
 }
 
 /* カスタムh2のスタイル */
@@ -124,19 +126,23 @@ body {
 
 .btn {
     padding: 10px 20px; /* ボタンに少し余白を追加 */
+    background-color: #1e70ae9e;
+    border-color: #1e70ae9e;
 }
+
+
 /*しあわせ*/
 .lead {
     color: #444;
     font-size: 6rem;
-    font-weight: 1000;
+    font-weight: 500;
     text-align: center;
     font-family: "Noto Sans JP", sans-serif;
 }
 
 /* カスタムpのスタイル */
 main p {
-    font-size: 1rem;
+    font-size: 1.8rem;
     color: #666;
     line-height: 1.8;
     text-align: center;
@@ -208,6 +214,10 @@ main p {
         margin-top: 130px;
         text-align: center;
     }
+    .main-theme {
+        font-size:1.5rem;
+        font-weight: bold;
+    }
 
     .lead {
         font-size: 3rem;
@@ -216,6 +226,8 @@ main p {
         font-family: "Noto Sans JP", sans-serif;
     }
 
-
-
+    main p {
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
 }
