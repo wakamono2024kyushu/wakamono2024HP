@@ -13,7 +13,7 @@
     <!-- Google Fonts (新しいフォント) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <!-- CSSの読み込み -->
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="theme.css">
@@ -35,7 +35,7 @@
                     <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">テーマ</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div class="offcanvas-body">
+                <div class="offcanvas-body d-flex flex-column">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item mx-3">
                             <a href="https://wakamono2024kyushu.com/" class="nav-link text-white text-center">
@@ -78,13 +78,32 @@
                             </a>
                         </li>
                     </ul>
+                            <!-- スペーサー -->
+                    <div class="flex-grow-1"></div>
+
+                        <!-- 下部に配置するナビゲーションリンク -->
+                    <ul class="navbar-nav mb-3">
+                        <li class="nav-item mx-3">
+                            <a href="sponsor.html" class="nav-link text-white text-center">
+                                <i class="fas fa-handshake fs-3.25"></i><span>スポンサー</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="q&a.html" class="nav-link text-white text-center">
+                                <i class="fas fa-question-circle fs-2"></i><span>  Q&A</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </nav>
 
+
   <!-- メインコンテンツ -->
   <main class="container">
+    <h2 class="main-theme">全体テーマ</h2>
+            <p class="lead">しあわせ</p>
     <h1>私たちはなぜラボっ子でいるのか。</h1>
     <p>
     <br>「たくさんの友達に出会えるから」<br>

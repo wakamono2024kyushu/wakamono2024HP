@@ -7,7 +7,7 @@
 
 /* 背景と全体のレイアウト */
 body {
-    font-family: "Zen Kurenaido", sans-serif;
+    font-family: "Zen Maru Gothic", serif;
     min-height: 100vh;
     background-color:  hwb(169 81% 11%);
     display: flex;
@@ -19,7 +19,7 @@ body {
 .main-image {
     width: 100%;
     max-width: 1000px;
-    height: auto;
+    height: 100%;
     margin: 70px auto;
     display: block;
 }
@@ -30,7 +30,6 @@ body {
     justify-content: center;
     gap: 40px; /* 各要素間のスペース */
     margin-top: 20px;
-    font-family: "Noto Sans JP", sans-serif;
 }
 
 .countdown-element {
@@ -104,7 +103,6 @@ body {
     font-weight:bold;
     color: rgba(255, 255, 255, 0.8);
     margin-bottom: 30px;
-    font-family: "Noto Sans JP", sans-serif;
 }
 
 /* カスタムh2のスタイル */
@@ -135,9 +133,8 @@ body {
 .lead {
     color: #444;
     font-size: 6rem;
-    font-weight: 500;
+    font-weight: 900;
     text-align: center;
-    font-family: "Noto Sans JP", sans-serif;
 }
 
 /* カスタムpのスタイル */

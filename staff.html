@@ -13,7 +13,7 @@
     <!-- Google Fonts (新しいフォント) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <!-- CSSの読み込み -->
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="staff.css">
@@ -24,14 +24,14 @@
     <nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="logo.png" class="mx-2" width="60" height="60">2024わかもの in 九州
+                <img src="logo.png" class="mx-2" width="60" height="60">実行委員
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">2024わかもの in 九州</h5>
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">実行委員</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body d-flex flex-column">
@@ -83,7 +83,7 @@
                         <!-- 下部に配置するナビゲーションリンク -->
                     <ul class="navbar-nav mb-3">
                         <li class="nav-item mx-3">
-                            <a href="sponser.html" class="nav-link text-white text-center">
+                            <a href="sponsor.html" class="nav-link text-white text-center">
                                 <i class="fas fa-handshake fs-3.25"></i><span>スポンサー</span>
                             </a>
                         </li>
@@ -102,29 +102,18 @@
 <!-- メインコンテンツ -->
 <main>
     <div class="committee-container">
+        <h1>2024わかものin九州を作る実行委員たちを大紹介!!</h1>
         <div class="committee-members">
-            <div class="member" onclick="openPopup('KOU2.jpg', 'プロフィールを書く')">
+            <div class="member " onclick="openPopup('KOU2.jpg', 'プロフィールを書く')">
                 <img src="./staffphoto/KOU1.jpg" alt="写真">
                 <h3>こうし</h3>
                 <p>実行委員長</p>
             </div>
-            <!-- 各委員の情報をここに追加 -->
-            <div class="member" onclick="openPopup('ERI2.jpg', 'プロフィールを書く')">
-                <img src="./staffphoto/ERI1.jpg" alt="写真">
-                <h3>えりつぃん</h3>
-                <p>フェス</p>
-            </div>
             <!-- 他の委員の情報を追加 -->
-            <div class="member" onclick="openPopup('GAKU2.jpg', 'プロフィールを書く')">
-                <img src="./staffphoto/GAKU1.jpg" alt="写真">
-                <h3>がっちゃん</h3>
-                <p>総務Co.</p>
-            </div>
-            <!-- 他の委員の情報を追加 -->
-            <div class="member" onclick="openPopup('HANA2.jpg', 'プロフィールを書く')">
-                <img src="./staffphoto/HANA1.jpg" alt="写真">
-                <h3>はな</h3>
-                <p>フェス</p>
+            <div class="member" onclick="openPopup('SORA2.jpg', 'プロフィールを書く')">
+                <img src="./staffphoto/SORA1.jpg" alt="写真">
+                <h3>そら</h3>
+                <p>フェスCo.</p>
             </div>
             <!-- 他の委員の情報を追加 -->
             <div class="member" onclick="openPopup('KEN2.jpg', 'プロフィールを書く')">
@@ -133,10 +122,34 @@
                 <p>合宿Co.</p>
             </div>
             <!-- 他の委員の情報を追加 -->
+            <div class="member" onclick="openPopup('GAKU2.jpg', 'プロフィールを書く')">
+                <img src="./staffphoto/GAKU1.jpg" alt="写真">
+                <h3>がっちゃん</h3>
+                <p>総務Co.</p>
+            </div>
+            <!-- 他の委員の情報を追加 -->
             <div class="member" onclick="openPopup('KIHO2.jpg', 'プロフィールを書く')">
                 <img src="./staffphoto/KIHO1.jpg" alt="写真">
                 <h3>きなこ</h3>
                 <p>広報Co./合宿</p>
+            </div>
+            <!-- 他の委員の情報を追加 -->
+            <div class="member" onclick="openPopup('RIN2.jpg', 'プロフィールを書く')">
+                <img src="./staffphoto/RIN1.jpg" alt="写真">
+                <h3>りんちゃん</h3>
+                <p>協力隊Co./合宿</p>
+            </div>
+            <!-- 各委員の情報をここに追加 -->
+            <div class="member" onclick="openPopup('ERI2.jpg', 'プロフィールを書く')">
+                <img src="./staffphoto/ERI1.jpg" alt="写真">
+                <h3>えりつぃん</h3>
+                <p>フェス</p>
+            </div>
+            <!-- 他の委員の情報を追加 -->
+            <div class="member" onclick="openPopup('HANA2.jpg', 'プロフィールを書く')">
+                <img src="./staffphoto/HANA1.jpg" alt="写真">
+                <h3>はな</h3>
+                <p>フェス</p>
             </div>
             <!-- 他の委員の情報を追加 -->
             <div class="member" onclick="openPopup('KOKI2.jpg', 'プロフィールを書く')">
@@ -169,12 +182,6 @@
                 <p>フェス/総務</p>
             </div>
             <!-- 他の委員の情報を追加 -->
-            <div class="member" onclick="openPopup('RIN2.jpg', 'プロフィールを書く')">
-                <img src="./staffphoto/RIN1.jpg" alt="写真">
-                <h3>りんちゃん</h3>
-                <p>協力隊Co./合宿</p>
-            </div>
-            <!-- 他の委員の情報を追加 -->
             <div class="member" onclick="openPopup('RISA2.jpg', 'プロフィールを書く')">
                 <img src="./staffphoto/RISA1.jpg" alt="写真">
                 <h3>りさこ</h3>
@@ -191,12 +198,6 @@
                 <img src="./staffphoto/SAWA1.jpg" alt="写真">
                 <h3>すわん</h3>
                 <p>合宿</p>
-            </div>
-            <!-- 他の委員の情報を追加 -->
-            <div class="member" onclick="openPopup('SORA2.jpg', 'プロフィールを書く')">
-                <img src="./staffphoto/SORA1.jpg" alt="写真">
-                <h3>そら</h3>
-                <p>フェスCo.</p>
             </div>
             <!-- 他の委員の情報を追加 -->
             <div class="member" onclick="openPopup('SOU2.jpg', 'プロフィールを書く')">
@@ -217,8 +218,8 @@
                 <p>フェス/総務</p>
             </div>
             <!-- 他の委員の情報を追加 -->
-            <div class="member" onclick="openPopup('ダウンロード.png', 'プロフィールを書く')">
-                <img src="ダウンロード.png" alt="写真">
+            <div class="member" onclick="openPopup('OJHO2.jpg', 'プロフィールを書く')">
+                <img src="./staffphoto/OJHO1.jpg" alt="写真">
                 <h3>おじょう</h3>
                 <p>フェス</p>
             </div>
@@ -235,8 +236,8 @@
                 <p>合宿</p>
             </div>
              <!-- 他の委員の情報を追加 -->
-             <div class="member" onclick="openPopup('ダウンロード.png', 'プロフィールを書く')">
-                <img src="ダウンロード.png" alt="写真">
+             <div class="member" onclick="openPopup('MIZU2.jpg', 'プロフィールを書く')">
+                <img src="./staffphoto/MIZU1.jpg" alt="写真">
                 <h3>みずは</h3>
                 <p>合宿</p>
             </div>
@@ -287,11 +288,11 @@
                 <i class="fab fa-instagram"></i><span> Instagram</span>
             </a>
             <!-- LINEアイコン -->
-            <a href="https://line.me/" target="_blank" class="text-white mx-3">
+            <a href="https://lin.ee/5xKUaVV" target="_blank" class="text-white mx-3">
                 <i class="fab fa-line"></i><span>LINE</span>
             </a>
             <!-- DMアイコン (メールリンク) -->
-            <a href="mailto:wakamonokyushu2024@gmail.com" class="text-white mx-3">
+            <a href="mailto:wakamono2024.kyushu@gmail.com" class="text-white mx-3">
                 <i class="fas fa-envelope"></i><span>DM</span>
             </a>
         </p>

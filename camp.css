@@ -7,7 +7,7 @@
 
 /* bodyのスタイル */
 body {
-    font-family: "Zen Kurenaido", sans-serif;
+    font-family: "Zen Maru Gothic", serif;
     min-height: 100vh;
     background-color:  hwb(169 81% 11%);
     display: flex;

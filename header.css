@@ -8,7 +8,7 @@
     top: 0;
     left: 0;
     z-index: 1000;
-    font-family: "Zen Kurenaido", sans-serif;
+    font-family: "Zen Maru Gothic", serif;
     height: 75px;
 }
 
@@ -143,11 +143,37 @@ footer a:hover {
     font-weight: weight;
     font-style: normal;
 }
-.zen-kurenaido-regular {
-    font-family: "Zen Kurenaido", sans-serif;
+
+.zen-maru-gothic-black {
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .zen-maru-gothic-bold {
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .zen-maru-gothic-medium {
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .zen-maru-gothic-regular {
+    font-family: "Zen Maru Gothic", serif;
     font-weight: 400;
     font-style: normal;
-}
+  }
+  
+  .zen-maru-gothic-light {
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
   
 
 @media (max-width: 768px)  {
