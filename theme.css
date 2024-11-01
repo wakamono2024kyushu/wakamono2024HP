@@ -28,6 +28,16 @@ main {
     margin-bottom: 70px;
     text-align: left;
 }
+.main-theme {
+    font-size: 2rem;
+    color: #444;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 2px solid #1e70ae;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
 /*しあわせ*/
 .lead {
     color: #444;
@@ -40,13 +50,47 @@ h1{
     font-size: 30px;
 }
 
-.container {
-    font-size: 20px;
-    color: #333;
-    font-family: "Zen Maru Gothic", serif;
-}
-
 .highlight { /* 強調表示用クラス */
     font-size: 1.2em;
     font-weight: bold;
+}
+
+h3 {
+    width: fit-content;
+    font-size: 0.7em;
+    font-family: "Noto Serif JP", serif;
+    text-align: left;
+    display: inline-block;
+}
+
+h4 {
+    font-size: 0.8em;
+    font-weight: bold;
+    font-family: "Noto Serif JP", serif;
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .main-theme {
+        font-size:1.5rem;
+        font-weight: bold;
+    }
+    .lead {
+        font-size: 4rem;
+        font-weight: 1000;
+        text-align: center;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .highlight { /* 強調表示用クラス */
+        font-size: 1em;
+        font-weight: bold;
+    }
+    h3{
+        font-size: 1em;
+    }
+    h4{
+        font-size: 1.2em;
+    }
 }

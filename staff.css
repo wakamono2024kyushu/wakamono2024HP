@@ -121,3 +121,8 @@ h1{
 .close-btn:hover {
     color: #000;
 }
+
+/*実行委員長挨拶*/
+.theme{
+    font-size: 10px;
+}
