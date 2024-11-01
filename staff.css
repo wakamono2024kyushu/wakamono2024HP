@@ -30,7 +30,7 @@ main {
 h1{
     font-size: 30px;
     margin-bottom: 30px;
-    font-color: #444;
+    color: #444;
 }
 
 /* 実行委員のスタイル */

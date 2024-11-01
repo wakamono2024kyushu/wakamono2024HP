@@ -34,87 +34,100 @@ h1{
     font-weight: bold;
     border-bottom: 2px solid #1e70ae;
     padding-bottom: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     margin-top: 50px;
 }
 
-.theme{
-    font-size: 3rem;
-    color: #444;
-    text-align: left;
-    font-weight: bold;
+/* テーマのスタイル */
+.theme {
+  font-size: 3rem;
+  color: #444;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 30px; /* テーマとボタンが重ならないようにマージンを追加 */
 }
 
-.cp_box1 {
-    position: relative;
-  }
-  .cp_box1 input {
-    display: none;
-  }
-  /*開くためのボタンとテキストを隠すグラデーションの設定*/
-  .cp_box1 label {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 1;
-    bottom: -10px;
-    width: 100%;
-    height: 140px; /* グラデーションの高さ */
-    cursor: pointer;
-    text-align: center;
-    /* 以下グラデーションは背景を自身のサイトに合わせて設定してください */
-    background: linear-gradient(to bottom, rgba(250, 252, 252, 0) 0%, hwb(169 81% 11%)90%);
-  }
-  /* 開いた時にグラデーションを消す */
-  .cp_box1 input:checked + label {
-    background: inherit;
-  }
-  .cp_box1 .cp_container {
-    overflow: hidden;
-    height: 250px; /* 開く前に見えている部分の高さ */
-    transition: all 0.5s;
-  }
-  /*続きをよむボタン*/
-  .cp_box1 label:after,
-  .cp_box1 label::before {
-    content: '';
-    position: absolute;
-    line-height: 2.5rem;
-  }
-  .cp_box1 label:after {
-    z-index: 2;
-    bottom: 20px;
-    width: 13em;
-    content: '続きをよむ';
-    color: #ffffff;
-    background: #1b2538;
-    border-radius: 20px;
-  }
-  .cp_box1 label::before {
-    position: absolute;
-    bottom: 38px;
-    left: calc(50% - 3.5em);
-    z-index: 3;
-    width: 10px;
-    height: 5px;
-    background: #ffffff;
-    clip-path: polygon(50% 100%, 0 0, 100% 0)
-  }
-  /*閉じるボタン*/
-  .cp_box1 input:checked + label:after {
-    content: '閉じる';
-  }
-  .cp_box1 input:checked + label:before {
-    left: calc(50% - 2.5em);
-    transform: scale(1, -1);
-  }
-  .cp_box1 input:checked ~ .cp_container {
-    height: auto;
-    padding-bottom: 80px; /* 閉じるボタンのbottomからの位置 */
-    transition: all 0.5s;
-  }
 
+.cp_box1 {
+  position: relative;
+  margin-bottom: 30px; /* コンテナの余白追加 */
+}
+
+.cp_box1 input {
+  display: none;
+}
+
+/* 開くためのボタンとテキストを隠すグラデーションの設定 */
+.cp_box1 label {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  bottom: -20px; /* ボタンをさらに下に配置 */
+  width: 100%;
+  height: 140px; /* グラデーションの高さ */
+  cursor: pointer;
+  text-align: center;
+  background: linear-gradient(to bottom, rgba(250, 252, 252, 0) 40%, hwb(169 81% 11%) 100%); /* グラデーションの開始位置を下げる */
+  margin-top: 20px; /* ボタンとテキストの間に余白を確保 */
+}
+
+/* 開いた時にグラデーションを消す */
+.cp_box1 input:checked + label {
+  background: inherit;
+}
+
+.cp_box1 .cp_container {
+  overflow: hidden;
+  height: 250px; /* 開く前に見えている部分の高さ */
+  transition: all 0.5s;
+}
+
+/* 続きをよむボタン */
+.cp_box1 label:after,
+.cp_box1 label::before {
+  content: '';
+  position: absolute;
+  line-height: 2.5rem;
+}
+
+.cp_box1 label:after {
+  z-index: 2;
+  bottom: 20px;
+  width: 13em;
+  content: '続きをよむ';
+  color: #ffffff;
+  background: #1b2538;
+  border-radius: 20px;
+}
+
+.cp_box1 label::before {
+  position: absolute;
+  bottom: 38px;
+  left: calc(50% - 3.5em);
+  z-index: 3;
+  width: 10px;
+  height: 5px;
+  background: #ffffff;
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
+/* 閉じるボタン */
+.cp_box1 input:checked + label:after {
+  content: '閉じる';
+}
+
+.cp_box1 input:checked + label:before {
+  left: calc(50% - 2.5em);
+  transform: scale(1, -1);
+}
+
+.cp_box1 input:checked ~ .cp_container {
+  height: auto;
+  padding-bottom: 80px; /* 閉じるボタンのbottomからの位置 */
+  transition: all 0.5s;
+}
 
 
 .list-group-item {
@@ -149,7 +162,7 @@ a:hover {
 } */
 
 .btn-primary {
-    background-color: #007bff;
+    background-color: #6193c8a5;
     border: none;
     padding: 10px 20px;
     font-size: 1.2rem;
@@ -164,9 +177,13 @@ a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 768px)  {
-    .list-group-item {
-        font-size: 13px;
-        text-align: left;
-    }
+@media (max-width: 768px) {
+  .main-theme {
+      font-size: 1.3rem;
+  }
+  .theme {
+      font-size: 2.5rem;
+      margin-left: -10px;
+      margin-bottom: 50px; /* テーマとボタンが重ならないようにマージンを調整 */
+  }
 }
