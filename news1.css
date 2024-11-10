@@ -1,0 +1,71 @@
+/* 全体のリセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 背景と全体のレイアウト */
+body {
+    font-family: "Zen Maru Gothic", serif;
+    min-height: 100vh;
+    background-color:  hwb(169 81% 11%);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 中央揃え */
+}
+
+/* メイン画像のカスタムスタイル */
+.main-image {
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+    margin: 70px auto;
+    display: block;
+}
+/* カスタムh2のスタイル */
+.main-theme {
+    font-size: 2rem;
+    color: #444;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 2px solid #1e70ae;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+
+        /* 他のスタイルもここに */
+@media (max-width: 768px) {
+  
+
+    .main-image {
+        width: 100%;
+        max-width: 1200px;
+        height: auto;
+        margin: 50px auto;
+        display: block;
+    }
+
+    main h1 {
+        font-size: auto;
+        color: #333;
+        margin-top: 130px;
+        text-align: center;
+    }
+    .main-theme {
+        font-size:1.5rem;
+        font-weight: bold;
+    }
+
+    .lead {
+        font-size: 3rem;
+        font-weight: 1000;
+        text-align: center;
+    }
+
+    main p {
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+}
