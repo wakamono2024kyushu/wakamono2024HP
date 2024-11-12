@@ -35,6 +35,21 @@ body {
 }
 
 
+/* カスタムpのスタイル */
+main p {
+    font-size: 1rem;
+    color: #666;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.mx-3{
+    font-size: 1.5rem;
+    color: #666;
+    text-align: left;
+    margin-bottom: 70px;
+}
+
         /* 他のスタイルもここに */
 @media (max-width: 768px) {
   
