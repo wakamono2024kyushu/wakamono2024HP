@@ -103,6 +103,29 @@ main p {
     font-family:"Noto Serif JP", serif;
 
 }
+/* ボタンのナビゲーション部分 */
+.news-navigation {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.news-navigation .btn {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    margin: 0 10px;
+}
+
+.news-navigation .btn-outline-secondary {
+    border-color: #666;
+    color: #666;
+}
+
+.news-navigation .btn-outline-secondary:hover {
+    background-color: #666;
+    color: #fff;
+}
 
 
 /* モバイル対応 */
