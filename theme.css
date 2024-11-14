@@ -7,90 +7,127 @@
 
 /* bodyのスタイル */
 body {
-    font-family: "Zen Maru Gothic", serif;
-    line-height: 1.6;
+    font-family: "Zen Maru Gothic", "Noto Sans JP", serif;
+    line-height: 1.8;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: hwb(169 81% 11%);
+    background-color:hwb(169 81% 11%);
+    color: #333;
 }
 
-/* メイン */
+/* メインコンテンツ */
 main {
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    background-color: #f4f4f4;
-    padding-top: 90px; /* ヘッダーの高さを考慮 */
-    padding-bottom: 60px; /* フッターの高さを考慮 */
-    margin-bottom: 70px;
-    text-align: left;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+/* テーマ見出し */
 .main-theme {
     font-size: 2rem;
     color: #444;
-    text-align: left;
     font-weight: bold;
     border-bottom: 2px solid #1e70ae;
     padding-bottom: 10px;
-    margin-bottom: 15px;
-}
-
-/*しあわせ*/
-.lead {
-    color: #444;
-    font-size: 6rem;
-    font-weight: 900;
+    margin-bottom: 20px;
     text-align: center;
 }
 
-h1{
-    font-size: 30px;
+/* リードテキスト（強調部分） */
+.lead {
+    color: #1e70ae;
+    font-size: 5rem;
+    font-weight: 900;
+    text-align: center;
+    margin: 30px 0;
 }
 
-.highlight { /* 強調表示用クラス */
-    font-size: 1.2em;
+
+/* 段落スタイル */
+main p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* 強調表示用クラス */
+.highlight {
+    font-size: 1.3rem;
     font-weight: bold;
+    color: #444;
 }
 
-h3 {
-    width: fit-content;
-    font-size: 0.7em;
-    font-family: "Noto Serif JP", serif;
-    text-align: left;
-    display: inline-block;
+/* 実行委員長挨拶部分 */
+.executive-message {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #dce4ee81;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h4 {
-    font-size: 0.8em;
+/* 段落間の余白 */
+.executive-message p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.9;
+    margin-bottom: 25px;
+    text-indent: 1em; /* 段落の最初をインデント */
+    font-family:"Noto Serif JP", serif;
+}
+
+/* 小見出しのスタイル */
+.executive-message h3 {
+    font-size: 1.2rem;
     font-weight: bold;
-    font-family: "Noto Serif JP", serif;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-left: 10px; /* 左側に余白を追加 */
+}
+
+/* 著者情報 */
+.executive-message .author-info h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
     text-align: right;
+    padding-left: 1.5em;
+    font-family:"Noto Serif JP", serif;
+
 }
 
+
+/* モバイル対応 */
 @media (max-width: 768px) {
+    main {
+        padding: 20px 15px;
+    }
+
     .main-theme {
-        font-size:1.5rem;
-        font-weight: bold;
+        font-size: 1.6rem;
     }
+
     .lead {
-        font-size: 4rem;
-        font-weight: 1000;
-        text-align: center;
+        font-size: 3rem;
     }
-    h1{
-        font-size: 20px;
+
+    main p {
+        font-size: 1rem;
     }
-    .highlight { /* 強調表示用クラス */
-        font-size: 1em;
-        font-weight: bold;
+
+    .executive-message p {
+        font-size: 1rem;
     }
-    h3{
-        font-size: 1em;
-    }
-    h4{
-        font-size: 1.2em;
+
+    .executive-message h3 {
+        font-size: 1.1rem;
     }
 }

@@ -4,26 +4,33 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-/* 背景と全体のレイアウト */
+/* 全体のフォントとレイアウト調整 */
 body {
-    font-family: "Zen Maru Gothic", serif;
+    font-family: "Zen Maru Gothic", "Noto Sans JP", sans-serif;
     min-height: 100vh;
-    background-color:  hwb(169 81% 11%);
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* 中央揃え */
+    background-color: hwb(169 81% 11%);
+    color: #444;
+    line-height: 1.7; /* 行間を広めに */
+    padding-top: 60px; /* ナビゲーションバーの分のスペース */
 }
 
-/* メイン画像のカスタムスタイル */
-.main-image {
-    width: 100%;
-    max-width: 1000px;
-    height: 100%;
-    margin: 70px auto;
-    display: block;
+/* メインコンテンツのスタイリング */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-/* カスタムh2のスタイル */
+
+/* セクションの余白と見出しのデザイン */
+main section {
+    margin-top: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
 .main-theme {
     font-size: 2rem;
     color: #444;
@@ -31,56 +38,121 @@ body {
     font-weight: bold;
     border-bottom: 2px solid #1e70ae;
     padding-bottom: 10px;
-    margin-bottom: 15px;
-}
-
-
-/* カスタムpのスタイル */
-main p {
-    font-size: 1rem;
-    color: #666;
-    text-align: left;
     margin-bottom: 20px;
 }
 
-.mx-3{
-    font-size: 1.5rem;
-    color: #666;
-    text-align: left;
-    margin-bottom: 70px;
+/* リストスタイルと段落のデザイン */
+main p, main .list-group-item {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
 }
 
-        /* 他のスタイルもここに */
+.list-group-item {
+    background-color: transparent;
+    border: none;
+    padding-left: 0;
+}
+
+/* ボタンのナビゲーション部分 */
+.news-navigation {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.news-navigation .btn {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    margin: 0 10px;
+}
+
+.news-navigation .btn-outline-primary {
+    border-color: #1e70ae;
+    color: #1e70ae;
+}
+
+.news-navigation .btn-outline-primary:hover {
+    background-color: #1e70ae;
+    color: #fff;
+}
+
+.news-navigation .btn-outline-secondary {
+    border-color: #666;
+    color: #666;
+}
+
+.news-navigation .btn-outline-secondary:hover {
+    background-color: #666;
+    color: #fff;
+}
+
+/* 画像の調整 */
+.main-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 30px auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* インスタグラムボタンのデザイン */
+a.instagram-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #e1306c; /* インスタグラムのブランドカラー */
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+a.instagram-btn i {
+    margin-right: 8px;
+    font-size: 1.2rem;
+}
+
+/* ホバー時のエフェクト */
+a.instagram-btn:hover {
+    background-color: #db90bb24;
+    transform: scale(1.05); /* ホバー時に少し拡大 */
+}
+
+
+/* フッター */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* モバイル対応 */
 @media (max-width: 768px) {
-  
-
-    .main-image {
-        width: 100%;
-        max-width: 1200px;
-        height: auto;
-        margin: 50px auto;
-        display: block;
-    }
-
-    main h1 {
-        font-size: auto;
-        color: #333;
-        margin-top: 130px;
-        text-align: center;
-    }
     .main-theme {
-        font-size:1.5rem;
-        font-weight: bold;
-    }
-
-    .lead {
-        font-size: 3rem;
-        font-weight: 1000;
-        text-align: center;
+        font-size: 1.5rem;
     }
 
     main p {
-        font-size: 1.1rem;
-        font-weight: bold;
+        font-size: 1rem;
+    }
+
+    .news-navigation .btn {
+        font-size: 1rem;
+        padding: 8px 16px;
     }
 }
