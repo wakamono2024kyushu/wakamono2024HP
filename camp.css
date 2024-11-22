@@ -43,7 +43,7 @@ font-weight: bold;
 margin-bottom: 30px; /* テーマとボタンが重ならないようにマージンを追加 */
 }
 
-p {
+.cp_container p {
 font-size: 1.1rem;
 color: #555;
 line-height: 1.9;

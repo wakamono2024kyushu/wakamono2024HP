@@ -27,10 +27,31 @@ main {
     padding: 20px;
 }
 
-h1{
+h1 {
     font-size: 30px;
     margin-bottom: 30px;
-    color: #444;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(90deg, #01659b, #1c8c9b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-regular {
+    background: #0289d14f;
+    color: #fff;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+}
+
+.point {
+   font-size: 15px;
 }
 
 /* 実行委員のスタイル */
@@ -62,7 +83,8 @@ h1{
 /* 画像を四角にする */
 .member img {
     width: 100%;
-    border-radius: 10px;
+    height: auto;
+    border-radius: 8px;
     margin-bottom: 15px;
     transition: none;
 }
@@ -98,13 +120,18 @@ h1{
 }
 
 .popup-content img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 15px;
+    width: 90%;
+    border-radius: 8px;
+    margin-bottom: 12px;
 }
 
+.popup-content h3 {
+    font-size: 19px;
+    color: #333;
+    margin-bottom: 10px;
+}
 .popup-content p {
-    font-size: 16px;
+    font-size: 12px;
     color: #333;
     margin-bottom: 15px;
 }
@@ -112,8 +139,9 @@ h1{
 .close-btn {
     position: absolute;
     top: 10px;
-    right: 20px;
-    font-size: 24px;
+    right: 10px;
+    font-size: 30px;
+    font-weight: bold;
     cursor: pointer;
     color: #333;
 }
@@ -122,7 +150,100 @@ h1{
     color: #000;
 }
 
-/*実行委員長挨拶*/
-.theme{
-    font-size: 10px;
+    /* レスポンシブ対応 */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 15px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .fa-regular {
+        font-size: 10px;
+    }
+
+    .point{
+        font-size: 10px;
+    }
+
+    .committee-members {
+        display: grid; /* 必要な場合、gridレイアウトを明示 */
+        grid-template-columns: repeat(4,1fr); /* カードの最小幅を150pxに調整 */
+        gap: 8px; /* カード間の余白を調整 */
+        width: 100%; /*全体幅をデバイス幅にフィット*/
+    }
+
+    .member {
+        width: 100%; /* カードの幅を100%に */
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 15px; /* カード内の余白 */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        display: flex;
+        flex-direction: column; /* 縦方向に配置 */
+        align-items: center; /* コンテンツを中央揃え */
+    }
+
+    .member img {
+        width: 120%; /* カード内の画像を親要素の幅に合わせる */
+        height: auto; /* アスペクト比を保持 */
+        border-radius: 5px; /* 画像の角を少し丸く */
+    }
+
+    .member h3 {
+        font-size: 10px; /* 名前のフォントサイズを小さく */
+        margin-top: -7px; /* 役職と名前の間隔を調整 */
+        margin-bottom: 5px;
+    }
+
+    .member p {
+        font-size: 7px; /* 役職のフォントサイズを小さく */
+        margin-bottom: -7px;
+    }
+
+    /* ポップアップコンテンツのサイズと位置調整 */
+    .popup-content {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 300px; /* ポップアップカードの最大幅を少し小さく */
+        width: 80%;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* 完全に中央に配置 */
+    }
+
+    .popup-content img {
+        width: 90%;
+        border-radius: 8px;
+        margin-bottom: 12px;
+    }
+
+    .popup-content h3 {
+        font-size: 19px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    .popup-content p {
+        font-size: 12px;
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 30px;
+        font-weight: bold;
+        cursor: pointer;
+        color: #333;
+    }
+
+    .close-btn:hover {
+        color: #000;
+    }
+
 }
