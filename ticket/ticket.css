@@ -20,10 +20,12 @@ body {
     color: #444;
     padding: 25px 20px;
     margin-top: 75px;
+    font-size: 33px;
+    font-weight: bold;
 }
 
 .hero-title {
-    font-size: 40px;
+    font-size: 45px;
     font-weight: bold;
     margin-bottom: 20px;
     background: linear-gradient(90deg, #01659b, #1c8c9b);
@@ -229,22 +231,103 @@ a:hover {
     margin: 20px auto;
 }
 
+.purchase-notes .underline {
+    font-size: 1.1rem;
+    text-decoration: underline;
+}
 
 /* メディアクエリ: モバイル対応 */
 @media (max-width: 768px) {
+
+    /* ヒーローセクション */
+    .hero {
+        padding: 15px 10px;
+        margin-top: 50px;
+        font-size: 20px;
+    }
+
     .hero-title {
-        font-size: 2rem;
+        font-size: 2rem; /* タイトルのフォントサイズを小さく */
     }
 
     .hero-subtitle {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .hero-period {
         font-size: 1rem;
+        margin-top: 15px;
     }
 
+    /* チケット情報セクション */
+    .card {
+        padding: 15px;
+        margin-bottom: 20px; /* 各カードに適切な余白を追加 */
+        box-shadow: none; /* ボックスシャドウを軽減 */
+    }
+
+    .card-img-top {
+        height: auto;
+        max-width: 100%; /* カード内の画像を画面幅に合わせる */
+        object-fit: cover;
+    }
+
+    .card-body {
+        padding: 10px;
+    }
+
+    .card-text {
+        font-size: 1rem; /* フォントサイズを小さく */
+    }
+
+    /* 購入方法セクション */
     .btn {
         font-size: 1rem;
+        padding: 10px;
+        margin-top: 10px; /* ボタン間の余白を追加 */
+    }
+
+    .btn-primary,
+    .btn-danger {
+        width: 90%; /* ボタンを親要素幅の90%に */
+        margin: 0 auto; /* ボタンを中央揃え */
+    }
+
+    /* 購入方法画像 */
+    .img-fluid {
+        max-width: 100%; /* 画像を画面幅に適合 */
+        height: auto;
+        margin: 10px 0;
+    }
+
+    /* 購入方法タイトル */
+    .card-title {
+        font-size: 1.5rem; /* フォントサイズを調整 */
+        margin-bottom: 20px;
+    }
+
+    /* 全体のセクション */
+    .purchase-notes {
+        padding: 5px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* テーブル */
+    .table {
+        font-size: 0.8rem;
+        margin: 10px auto;
+    }
+
+    .purchase-notes underline  {
+        font-size: 0.9rem; /* モバイルでフォントサイズを少し大きく */
+        line-height: 1.5; /* 行間を少し広げて見やすく */
+        text-decoration: underline; /* 下線はそのまま */
+    }
+
+    .table td, 
+    .table th {
+        padding: 10px;
     }
 }
+
