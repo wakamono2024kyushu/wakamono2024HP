@@ -241,7 +241,7 @@ a:hover {
 
     /* ヒーローセクション */
     .hero {
-        padding: 15px 10px;
+        padding: 30px 10px;
         margin-top: 50px;
         font-size: 20px;
     }
@@ -251,7 +251,7 @@ a:hover {
     }
 
     .hero-subtitle {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .hero-period {
@@ -267,7 +267,6 @@ a:hover {
     }
 
     .card-img-top {
-        height: auto;
         max-width: 100%; /* カード内の画像を画面幅に合わせる */
         object-fit: cover;
     }
@@ -313,6 +312,10 @@ a:hover {
         margin-bottom: 20px;
     }
 
+    .purchase-notes p {
+        font-size: 0.9rem; /* モバイルでフォントサイズを少し小さく */
+    }
+
     /* テーブル */
     .table {
         font-size: 0.8rem;
@@ -321,13 +324,17 @@ a:hover {
 
     .purchase-notes .underline  {
         font-size: 0.9rem; /* モバイルでフォントサイズを少し大きく */
-        line-height: 1.5; /* 行間を少し広げて見やすく */
         text-decoration: underline; /* 下線はそのまま */
+        text-align: left;
     }
 
     .table td, 
     .table th {
         padding: 10px;
+    }
+
+    .purchase-notes h2{
+        font-size: 1.3rem;
     }
 }
 
