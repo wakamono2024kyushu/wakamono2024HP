@@ -319,7 +319,7 @@ a:hover {
         margin: 10px auto;
     }
 
-    .purchase-notes underline  {
+    .purchase-notes .underline  {
         font-size: 0.9rem; /* モバイルでフォントサイズを少し大きく */
         line-height: 1.5; /* 行間を少し広げて見やすく */
         text-decoration: underline; /* 下線はそのまま */
