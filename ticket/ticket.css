@@ -247,15 +247,16 @@ a:hover {
     }
 
     .hero-title {
-        font-size: 2rem; /* タイトルのフォントサイズを小さく */
+        font-size: 1.6rem; /* タイトルのフォントサイズを小さく */
+        margin-top: 10px;
     }
 
     .hero-subtitle {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .hero-period {
-        font-size: 1rem;
+        font-size: 1.3rem;
         margin-top: 15px;
     }
 
@@ -302,12 +303,16 @@ a:hover {
     /* 購入方法タイトル */
     .card-title {
         font-size: 1.5rem; /* フォントサイズを調整 */
+        margin-left: 10px; /* タイトルの左側に余白を追加 */
+        margin-right: 10px; /* タイトルの右側に余白を追加 */
         margin-bottom: 20px;
     }
 
     /* 全体のセクション */
     .purchase-notes {
         padding: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
         margin-top: 20px;
         margin-bottom: 20px;
     }
