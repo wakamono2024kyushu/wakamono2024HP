@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* bodyのスタイル */
+body {
+    font-family: "Zen Maru Gothic", serif;
+    min-height: 100vh;
+    background-color:  hwb(169 81% 11%);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 中央揃え */
+}
+
+/* 特定のクラスに対して色を変更 */
+.custom-heading {
+    color: #444 !important; /* 見出しの色を#444に強制的に変更 */
+    /* font-family: "Noto Sans JP", sans-serif; 見出しのフォントをNoto Sans JPに変更 */
+}
+
+/* カスタムh2のスタイル */
+.main-theme {
+    font-size: 2rem;
+    color: #444;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 2px solid #1e70ae;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+/* テーマのスタイル */
+.theme {
+  font-size: 3rem;
+  color: #444;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 30px; /* テーマとボタンが重ならないようにマージンを追加 */
+}
+
+.cp_container p {
+font-size: 1.1rem;
+    color: #555;
+    line-height: 1.9;
+    margin-bottom: 25px;
+    text-indent: 1em; /* 段落の最初をインデント */
+}
+
+.cp_box1 {
+  position: relative;
+  margin-bottom: 30px; /* コンテナの余白追加 */
+}
+
+.cp_box1 input {
+  display: none;
+}
+
+/* 開くためのボタンとテキストを隠すグラデーションの設定 */
+.cp_box1 label {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  bottom: -20px; /* ボタンをさらに下に配置 */
+  width: 100%;
+  height: 140px; /* グラデーションの高さ */
+  cursor: pointer;
+  text-align: center;
+  background: linear-gradient(to bottom, rgba(250, 252, 252, 0) 40%, hwb(169 81% 11%) 100%); /* グラデーションの開始位置を下げる */
+  margin-top: 20px; /* ボタンとテキストの間に余白を確保 */
+}
+
+/* 開いた時にグラデーションを消す */
+.cp_box1 input:checked + label {
+  background: inherit;
+}
+
+.cp_box1 .cp_container {
+  overflow: hidden;
+  height: 250px; /* 開く前に見えている部分の高さ */
+  transition: all 0.5s;
+}
+
+/* 続きをよむボタン */
+.cp_box1 label:after,
+.cp_box1 label::before {
+  content: '';
+  position: absolute;
+  line-height: 2.5rem;
+}
+
+.cp_box1 label:after {
+  z-index: 2;
+  bottom: 20px;
+  width: 13em;
+  content: '続きをよむ';
+  color: #ffffff;
+  background: #1b2538;
+  border-radius: 20px;
+}
+
+.cp_box1 label::before {
+  position: absolute;
+  bottom: 38px;
+  left: calc(50% - 3.5em);
+  z-index: 3;
+  width: 10px;
+  height: 5px;
+  background: #ffffff;
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
+/* 閉じるボタン */
+.cp_box1 input:checked + label:after {
+  content: '閉じる';
+}
+
+.cp_box1 input:checked + label:before {
+  left: calc(50% - 2.5em);
+  transform: scale(1, -1);
+}
+
+.cp_box1 input:checked ~ .cp_container {
+  height: auto;
+  padding-bottom: 80px; /* 閉じるボタンのbottomからの位置 */
+  transition: all 0.5s;
+}
+
+
+.list-group-item {
+    font-size: 1rem;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+/* アイコンと文字の間にスペースを作る */
+.map-icon {
+    margin-left: 50px; /* アイコンと文字の間に50pxのスペースを追加 */
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+.map-container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center; /* 中央揃え */
+}
+
+/* iframe {
+    width: 350px;
+    height: 300px;
+    border: 0;
+} */
+
+.btn-primary {
+    background-color: #6193c8a5;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .main-theme {
+      font-size: 1.3rem;
+  }
+  .theme {
+      font-size: 2.3rem;
+      margin-left: 10px;
+      margin-bottom: 50px; /* テーマとボタンが重ならないようにマージンを調整 */
+  }
+}

@@ -1,0 +1,212 @@
+/* 新ヘッダーのCSS */
+.navbar {
+    background: linear-gradient(to right, #4abdbd, #5fa2da);
+    color: #e6e3e3;
+    padding: 0px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    font-family: "Zen Maru Gothic", serif;
+    height: 75px;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+}
+.offcanvas-title {
+    font-size: 1.4rem;
+}
+
+
+.offcanvas-header {
+    height: 75px;
+    background: linear-gradient(to right, #4abdbd, #5fa2da);
+    color: white;
+    border-bottom: 1px solid #e6e3e3;
+}
+
+.offcanvas-body {
+    background: linear-gradient(to right, #4abdbd, #5fa2da);
+    color: white;
+}
+.navbar-toggler {
+    font-size: 17px;
+}
+.navbar-nav li {
+    margin: 10 10px;
+}
+.navbar-nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 10px 20px;
+    border-radius: 60px;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    transition: 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-nav li a span {
+    font-size: 15px;
+    margin-left: 25px;
+    display: flex;
+    /* align-items: center; */
+}
+
+.navbar-nav li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform: scale(1.1);
+}
+
+.form-control {
+    background-color: #343a40;
+    color: white;
+    border: 1px solid #495057;
+}
+
+.form-control:focus {
+    background-color: #343a40;
+    color: white;
+    border-color: #6c757d;
+}
+
+.btn-success {
+    background-color: #198754;
+    border-color: #198754;
+}
+/*  */
+
+
+footer {
+    background-color: #5d7283;  /* フッターの背景色 */
+    color: #fff;                /* テキストの色 */
+    width: 100%;                /* フッターを画面幅いっぱいに */
+    height: 50px;              /* フッターの高さを100pxに設定 */
+    padding: 7px 0;            /* 上下の余白を20pxに設定 */
+    margin-top: auto;           /* フッターをページの最下部に配置 */
+}
+
+footer p {
+    display: flex;              /* アイコン全体を横並びに */
+    justify-content: center;     /* 中央に揃える */
+    align-items: center;         /* 垂直方向に中央揃え */
+}
+
+footer a {
+    color: #fff;                 /* リンクの色 */
+    text-decoration: none;       /* 下線を除去 */
+    font-size: 18px;             /* フォントサイズを設定 */
+    display: flex;               /* アイコンとテキストを横並びに */
+    align-items: center;         /* 垂直方向に中央揃え */
+    margin: 0 15px;              /* 各リンク間に余白を追加 */
+}
+
+footer a i {
+    font-size: 23px;             /* アイコンのサイズを36pxに設定 */
+    margin-right: 10px;          /* アイコンとテキストの間に余白を追加 */
+}
+
+footer a span {
+    font-size: 20px;             /* テキストのサイズを設定 */
+}
+
+footer a:hover {
+    text-decoration: none;       /* 下線は引かない */
+    color: #ddd;                 /* ホバー時のテキスト色を変更 */
+}
+
+フォントの設定
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 900 */
+.noto-serif-jp-uniquifier {
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+.noto-sans-jp-uniquifier {
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.zen-maru-gothic-black {
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .zen-maru-gothic-bold {
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .zen-maru-gothic-medium {
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .zen-maru-gothic-regular {
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .zen-maru-gothic-light {
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  
+
+@media (max-width: 768px)  {
+    header {
+        height: 15vh;
+    }
+    header nav ul li a {
+        font-size: 20px;
+        padding: 10px 15px;
+    }
+    header nav ul li a i {
+        font-size: 20px;
+    }
+    header nav ul li a span {
+        font-size: 10px;
+    }
+    footer {
+        height: 40px;
+        padding: 5px 0;
+    }
+    footer a {
+        font-size: 16px;
+    }
+    footer a i {
+        font-size: 20px;
+    }
+    footer a span {
+        font-size: 16px;
+    }
+
+    .navbar-brand {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #ffffff;
+    }
+}

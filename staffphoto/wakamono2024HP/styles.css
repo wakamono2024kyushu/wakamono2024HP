@@ -1,0 +1,82 @@
+/* 全体のリセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 背景と全体のレイアウト */
+body {
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    background-color: hwb(168 95% 1%);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 中央揃え */
+}
+
+/* メイン画像のカスタムスタイル */
+.main-image {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    margin: 70px auto;
+    display: block;
+}
+
+/* カスタムh2のスタイル */
+main h2 {
+    font-size: 2rem;
+    color: #444;
+    text-align: left;
+    border-bottom: 5px solid #1e40ae;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* ボタンの右下配置を強調 */
+.text-end {
+    margin-top: 20px; /* ボタンに少し余白を追加 */
+}
+
+.btn {
+    padding: 10px 20px; /* ボタンに少し余白を追加 */
+}
+
+/* カスタムpのスタイル */
+main p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.8;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+
+
+/* スクロールバーを非表示 */
+.overflow-auto::-webkit-scrollbar {
+    display: none;
+}
+.overflow-auto {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+@media (max-width: 768px)  {
+    .main-image {
+        width: 100%;
+        max-width: 1200px;
+        height: auto;
+        margin: 50px auto;
+        display: block;
+    }
+
+    main h1 {
+        font-size: auto;
+        color: #333;
+        margin-top: 130px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ラボ 2024わかもの in 九州</title>
+    <!-- Font Awesomeの読み込み -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS (Optional: For components like modals) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Google Fonts (新しいフォント) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- CSSの読み込み -->
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="staff.css">
+
+</head>
+<body>
+    <!-- 新ヘッダー -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://wakamono2024kyushu.com/" class="nav-link text-white text-center">
+                <img src="logo.png" class="mx-2" width="60" height="60">2024わかものin九州
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">実行委員</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body d-flex flex-column">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item mx-3">
+                            <a href="https://wakamono2024kyushu.com/" class="nav-link text-white text-center">
+                                <i class="fas fa-home fs-3"></i><span>ホーム</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="fes.html" class="nav-link text-white text-center">
+                                <i class="fas fa-video fs-3"></i><span>フェスティバル</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="camp.html" class="nav-link text-white text-center">
+                                <i class="fas fa-campground fs-3"></i><span>合宿</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="staff.html" class="nav-link text-white text-center">
+                                <i class="fas fa-users fs-4"></i><span>実行委員</span>
+                            </a>
+                        </li>
+                        <!-- <li class="nav-item mx-3">
+                            <a href="letter.html" class="nav-link text-white text-center">
+                                <i class="fas fa-envelope fs-2"></i><span>憧レター</span>
+                            </a>
+                        </li> -->
+                        <li class="nav-item mx-3">
+                            <a href="./ticket/ticket.html" class="nav-link text-white text-center">
+                                <i class="fas fa-ticket fs-3"></i><span>チケット購入</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="kyushu.html" class="nav-link text-white text-center">
+                                <i class="fa-solid fa-map-location-dot fs-3"></i><span>九州</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="login.html" class="nav-link text-white text-center">
+                                <i class="fas fa-user-circle fs-3"></i><span>マイページ</span>
+                            </a>
+                        </li>
+                    </ul>
+                         <!-- スペーサー -->
+                    <div class="flex-grow-1"></div>
+
+                        <!-- 下部に配置するナビゲーションリンク -->
+                   <!-- <ul class="navbar-nav mb-3">
+                        <li class="nav-item mx-3">
+                            <a href="sponsor.html" class="nav-link text-white text-center">
+                                <i class="fas fa-handshake fs-3.25"></i><span>スポンサー</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="q&a.html" class="nav-link text-white text-center">
+                                <i class="fas fa-question-circle fs-2"></i><span>  Q&A</span>
+                            </a>
+                        </li>
+                    </ul> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+<!-- メインコンテンツ -->
+<main>
+    <div class="committee-container">
+        <h1>2024わかものin九州を作る実行委員たちを大紹介!!
+            <br><i class="fa-regular fa-hand-point-up"></i>
+            <a class="point">画像をタップでプロフィールを表示してね</a>
+        </h1>
+            <div class="committee-members">
+            <div class="member" onclick="openPopup('KOU2.jpg','こうし（大4）',
+            '全ての物事をポジティブを越えるポジティブに捉え、悪事は絶対に許さない正義のヒーロー系実行委員長、こうし。決めゼリフは、「わかもの一緒にやりたくない？？」',
+            'theme.html#:~:text=%E8%80%83%E3%81%88%E3%81%A6%E3%81%BB%E3%81%97%E3%81%84%E3%80%82-,%E5%AE%9F%E8%A1%8C%E5%A7%94%E5%93%A1%E9%95%B7%E6%8C%A8%E6%8B%B6,-%E3%83%A9%E3%83%9C%E3%83%BB%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%81%AE')">
+                <img src="./staffphoto/KOU1.jpg" alt="写真">
+                <h3>こうし</h3>
+                <p>実行委員長</p>
+            </div>
+            <!-- 他の委員の情報を追加 -->
+            <div class="member" onclick="openPopup('SORA2.jpg','そら（大４）','プロフィールを書く')">
+                <img src="./staffphoto/SORA1.jpg" alt="写真">
+                <h3>そら</h3>
+                <p>フェスティバルCo.</p>
+            </div>
+            <!-- 他の委員の情報を追加 -->
+            <div class="member" onclick="openPopup('KEN2.jpg','けんけん（大４）',
+            '見た目は大人、中身も、、と思いきやふとした瞬間に5歳児へ。いや、こだわりが強いだけなんです。こだわりにこだわりを重ねる職人のようなけんけんを下期生達は怖がっている時期もあったとか。そんな彼の人間味を暴く方法はただ一つ、みんなけんけん宅集合！！！')">
+                <img src="./staffphoto/KEN1.jpg" alt="写真">
+                <h3>けんけん</h3>
+                <p>合宿Co.</p>
+            </div>
+            <!-- 他の委員の情報を追加 -->
+            <div class="member" onclick="openPopup('GAKU2.jpg','がっちゃん（大３）',
+            '会議の大半で表情を変えることはないが、たまに見せる笑顔が誰よりも可愛いので必見。自転車の話を始めるとよく分からない部品の名前を出し始めるので要注意である。のり塩ポテチが好きらしい。')">
+                <img src="./staffphoto/GAKU1.jpg" alt="写真">
+                <h3>がっちゃん</h3>
+                <p>総務Co.</p>
+            </div>
+            <!-- 他の委員の情報を追加 -->
+            <div class="member" onclick="openPopup('KIHO2.jpg','きなこ（大３）',
+            '花より団子、団子よりパイの実。夏の暑い日も、寒さに凍えそうな時もお菓子を手放さなかったことから「砂糖のゴミ箱」という異名を持つ。将来の夢は玉の輿。')">
+                <img src="./staffphoto/KIHO1.jpg" alt="写真">
+                <h3>きなこ</h3>
+                <p>広報Co./合宿</p>
+            </div>
+            <!-- 他の委員の情報を追加 -->
+            <div class="member" onclick="openPopup('RIN2.jpg','りんちゃん（大３）',
+            '関西弁しか喋れへんけど、なんか文句ある？？九州のリアルちいかわ！！なんでって？会えば分かんで! りんちゃんグリーティングは、わかもの当日やで！！')">
+                <img src="./staffphoto/RIN1.jpg" alt="写真">
+                <h3>りんちゃん</h3>
+                <p>全国協力隊Co./合宿</p>
+            </div>
+            <!-- 各委員の情報をここに追加 -->
+            <div class="member" onclick="openPopup('ERI2.jpg','えりつぃん（大３）',
+            '超計画型なえりつぃんは行動力の塊！だけど平日はずっと実習で大忙しな看護学生！💉コミュ力お化けが天真爛漫にマシンガントーク炸裂しちゃうよ〜⭐←たまに熊本弁が紛れてるカモ？️')">
+                <img src="./staffphoto/ERI1.jpg" alt="写真">
+                <h3>えりつぃん</h3>
+                <p>フェスティバル</p>
+            </div>
+            <!-- 他の委員の情報を追加 -->
+            <div class="member" onclick="openPopup('HANA2.jpg','ふるる（大１）',
+            'ん？誰がチビじゃ！小さいから可愛いやん！推ししか勝たん！同担拒否はいたしません！女子中女子高女子大の花園育ちだが、花園要素はどこへいったのか…だれか見つけてくれ。')">
+                <img src="./staffphoto/HANA1.jpg" alt="写真">
+                <h3>ふるる</h3>
+                <p>フェスティバル</p>
+            </div>
+            <!-- 他の委員の情報を追加 -->
+            <div class="member" onclick="openPopup('KOKI2.jpg','やきそば（大３）',
+            '本人曰く、昔はもっと焼きそばだったらしい。確かに私もそう思うよ。今は…お好み焼きかなぁ。お姉ちゃんとバイクが大好きで脳筋な彼は寄り道なんてしません！目的に向かってまっしぐら！！！')">
+                <img src="./staffphoto/KOKI1.jpg" alt="写真">
+                <h3>やきそば</h3>
+                <p>合宿</p>
+            </div>
+            <!-- 他の委員の情報を追加 -->
+            <div class="member" onclick="openPopup('MACHI2.jpg','まっちー（大１）',
+            '「人生って一筋縄じゃいかないんだよ。」彼女は大切なことを身をもってみんなに教えてくれる。彼女の激動の人生エピソードはみつをよりも響くのかもしれない。それでは聞いてください。「これ🗼、スカイツリーじゃないの？」')">
+                <img src="./staffphoto/MACHI1.jpg" alt="写真">
+                <h3>まっちー</h3>
+                <p>合宿</p>
+            </div>
+            <!-- 他の委員の情報を追加 -->
+            <div class="member" onclick="openPopup('MASHU2.jpg','ましゅまろ（大２）',
+            '好きな食べ物は、野菜マシマシあぶらマシマシ二郎系ラーメン。嫌いな食べ物は、トマト、キノコ、ブロッコリー！！色なんていらない、茶色万歳！！と叫ぶ彼は今日もトイレに篭っている。')">
+                <img src="./staffphoto/MASHU1.jpg" alt="写真">
+                <h3>ましゅまろ</h3>
+                <p>合宿</p>
+            </div>
+            <!-- 他の委員の情報を追加 -->
+            <div class="member" onclick="openPopup('MOYA2.jpg','もやし（大１）',
+            'テレビ局でアルバイト中の彼は、九州支部のデジタル担当！ガリレオのごとくメガネをくいっと。「僕やります。」動画作りならお任せください！ちなみにあだ名の由来は見た目が似てるから〜、、なんだって！')">
+                <img src="./staffphoto/MOYA1.jpg" alt="写真">
+                <h3>もやし</h3>
+                <p>フェスティバル</p>
+            </div>
+            <!-- 他の委員の情報を追加 -->
+            <div class="member" onclick="openPopup('NAO2.jpg','なおちゃん','プロフィールを書く')">
+                <img src="./staffphoto/NAO1.jpg" alt="写真">
+                <h3>なおちゃん</h3>
+                <p>フェスティバル/総務</p>
+            </div>
+            <!-- 他の委員の情報を追加 -->
+            <div class="member" onclick="openPopup('RISA2.jpg','りさこ（大１）',
+            '唯一のツッコミ担当。彼女のツッコミは冷静で的確で、それがまた面白さを加速させる。そんなりさこもnew kawaii🩷まつ毛がくるんとお人形のような瞳は見つめられると吸い込まれちゃう〜！')">
+                <img src="./staffphoto/RISA1.jpg" alt="写真">
+                <h3>りさこ</h3>
+                <p>フェスティバル</p>
+            </div>
+            <!-- 他の委員の情報を追加 -->
+            <div class="member" onclick="openPopup('SAKU2.jpg','さくさん（大１）',
+            'リケジョな彼女は疲れると海に行きたくなるんだとか。さくさんに会った時にはおすすめの海を紹介しましょう。海は泳ぐものじゃなくて眺めるものです。')">
+                <img src="./staffphoto/SAKU1.jpg" alt="写真">
+                <h3>さくさん</h3>
+                <p>フェスティバル</p>
+            </div>
+            <!-- 他の委員の情報を追加 -->
+            <div class="member" onclick="openPopup('SAWA2.jpg','すわん（大４）',
+            'このHP作成を担当しています！！ふわんふわんすわん〜あっ！！すわんが飛んでっちゃうっっ！！日本を越えて海外へ！すわんは白鳥のように美しく、どんな時も輝きを放っている。')">
+                <img src="./staffphoto/SAWA1.jpg" alt="写真">
+                <h3>すわん</h3>
+                <p>合宿</p>
+            </div>
+            <!-- 他の委員の情報を追加 -->
+            <div class="member" onclick="openPopup('SOU2.jpg','のび（大３）',
+            '漫画保有数1万冊越え！！？！漫画の世界を飛び出して、やってきたのはサバゲーの世界。福岡の山の中を重装備で駆け巡り、心の銃で相手の心を撃ち抜いてゆく〜')">
+                <img src="./staffphoto/SOU1.jpg" alt="写真">
+                <h3>のび</h3>
+                <p>合宿/総務</p>
+            </div>
+            <!-- 他の委員の情報を追加 -->
+            <div class="member" onclick="openPopup('SUZU2.jpg','すず（大２）',
+            '外見淡色、中身も淡色、バイトも淡色。淡色系女子目指してます！九州支部うたのおねえさんとは彼女のこと。九州支部コーチヘッドを務めるすずは、今日もパワフルに活動中！！')">
+                <img src="./staffphoto/SUZU1.jpg" alt="写真">
+                <h3>すず</h3>
+                <p>フェスティバル/全国協力隊</p>
+            </div>
+            <!-- 他の委員の情報を追加 -->
+            <div class="member" onclick="openPopup('TOMO2.jpg','とも（大１）',
+            '優等生の道を一歩も踏み外すことなく歩む彼。お兄ちゃんは最近冷たくされて悲しいらしい。。でもそんなともきの尊敬する人はお兄ちゃん！これ内緒🤫')">
+                <img src="./staffphoto/TOMO1.jpg" alt="写真">
+                <h3>とも</h3>
+                <p>フェスティバル/総務</p>
+            </div>
+            <!-- 他の委員の情報を追加 -->
+            <div class="member" onclick="openPopup('OJHO2.jpg','おじょう（大１）',
+            '医学部医学科フットサルチーム所属。なんでもできちゃうおじょうは、一刻も早くオーストラリア国籍を取って国境なき医師団で活躍したい、、、')">
+                <img src="./staffphoto/OJHO1.jpg" alt="写真">
+                <h3>おじょう</h3>
+                <p>フェスティバル</p>
+            </div>
+             <!-- 他の委員の情報を追加 -->
+             <div class="member" onclick="openPopup('MARI2.jpeg','ちゃんまり（大４）',
+             '会議に100gのMySoltを持参する自炊系女子。塩があればなんでも美味しく食べられます。そんな彼女、ラボ・ライブラリー索引機能を持っているため、ライブラリー名を言えば、ディスクNo.を教えてくれる。')">
+                <img src="./staffphoto/MARI1.jpeg" alt="写真">
+                <h3>ちゃんまり</h3>
+                <p>フェスティバル/全国協力隊</p>
+            </div>
+            <!-- 他の委員の情報を追加 -->
+            <div class="member" onclick="openPopup('DONN2.jpg','どんぐり（大３）',
+            '意外とインドア派？ラーメンも好きらしいけど、真相は謎のまま。。。イケメンなのにどこか抜けててユーモア抜群。神様が奇跡のバランスで設計してくれました！')">
+               <img src="./staffphoto/DONN1.jpg" alt="写真">
+                <h3>どんぐり</h3>
+                <p>合宿</p>
+            </div>
+             <!-- 他の委員の情報を追加 -->
+             <div class="member" onclick="openPopup('MIZU2.jpg','みずは（大２）',
+             '一見可愛い女子大生。一見ね。そこにどんな秘密が隠されているかは仲良くなってからのお楽しみ。いつでもどこでも歌っているみずは。そんな彼女の名言は「私いいBGMになるよ♪」',)">
+                <img src="./staffphoto/MIZU1.jpg" alt="写真">
+                <h3>みずは</h3>
+                <p>合宿</p>
+            </div>
+             <!-- 他の委員の情報を追加 -->
+             <div class="member" onclick="openPopup('ダウンロード.png','みうな','プロフィールを書く')">
+                <img src="ダウンロード.png" alt="写真">
+                <h3>みうな</h3>
+                <p>合宿</p>
+            </div>
+             <!-- 他の委員の情報を追加 -->
+             <div class="member" onclick="openPopup('ダウンロード.png','あいちゃん（大１）',
+             '出会った瞬間からほわほわ優しい雰囲気を感じさせる。山奥の寮に住んでいるため、ズーム会議はいつも電波ちょっと悪め、、')">
+                <img src="ダウンロード.png" alt="写真">
+                <h3>あいちゃん</h3>
+                <p>合宿</p>
+            </div>
+            <!-- 他の委員の情報を追加 -->
+            <div class="member" onclick="openPopup('SHIMI2.jpg','しみさん（大３）',
+            'カルタもアイドルも野球も！あらゆるジャンルでオタク道を極める秀才しみさん。現在スペインで修行中!! 8時間の時差にも負けず、わかもの実行委員を陰ながら支え続けてくれます。')">
+                <img src="./staffphoto/SHIMI1.jpg" alt="写真">
+                <h3>しみさん</h3>
+                <p>フェスティバル/全国協力隊</p>
+    </div>
+</main>
+
+<!-- ポップアップのモーダル -->
+<div id="popup-modal" class="popup-modal" style="display: none;">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <img id="popup-image" src="">
+        <h3 id = "popup-name"></h3>
+        <p id="popup-text"></p>
+        <a id="popup-link"></a>
+    </div>
+</div>
+
+<!-- JavaScript -->
+<script>
+    function openPopup(imageSrc, name, description, link) {
+        document.getElementById('popup-image').src = './staffphoto/' + imageSrc;
+        document.getElementById('popup-name').textContent = name;
+        document.getElementById('popup-text').textContent = description;
+        document.getElementById('popup-modal').style.display = 'block';
+        if (link!=null) {
+            document.getElementById('popup-link').href = link;
+            document.getElementById('popup-link').textContent = '実行委員長挨拶';
+        }
+        else {
+            document.getElementById('popup-link').href = '';
+            document.getElementById('popup-link').textContent = '';
+        }
+    }
+
+    function closePopup() {
+        document.getElementById('popup-modal').style.display = 'none';
+    }
+
+</script>
+
+<!-- フッター -->
+<footer class="w-100">
+    <div class="container">
+        <p class="d-flex justify-content-center align-items-center">
+            <!-- Instagramアイコン -->
+            <a href="https://www.instagram.com/labo_wakamono?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="text-white mx-3">
+                <i class="fab fa-instagram"></i><span> Instagram</span>
+            </a>
+            <!-- LINEアイコン -->
+            <a href="https://lin.ee/5xKUaVV" target="_blank" class="text-white mx-3">
+                <i class="fab fa-line"></i><span>LINE</span>
+            </a>
+            <!-- DMアイコン (メールリンク) -->
+            <a href="mailto:wakamono2024.kyushu@gmail.com" class="text-white mx-3">
+                <i class="fas fa-envelope"></i><span>DM</span>
+            </a>
+        </p>
+    </div>
+</footer>
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</body>
+</html>

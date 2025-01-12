@@ -1,0 +1,107 @@
+/* 全体のリセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 背景と全体のレイアウト */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    background-color: hwb(169 81% 11%);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 中央揃え */
+}
+
+/* 中央揃えのためのmain */
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 80px; /* ヘッダーの高さ分の余白を追加 */
+}
+
+/* ログインフォームのスタイル */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 40px;
+    text-align: left; /* 左揃えに変更 */
+}
+
+.input-box label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+    padding-left: 40px; /* アイコンのスペースを確保 */
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px 40px 10px 60px; /* アイコンのスペースを確保 */
+    background: rgba(0, 0, 0, 0.05);
+    border: none;
+    border-radius: 25px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.input-box input:focus {
+    background: #fff;
+    border: 2px solid #007BFF;
+}
+
+.input-box i {
+    position: absolute;
+    top: 4px; /* アイコンの位置を調整 */
+    left: 10px;
+    color: #007BFF;
+    transition: color 0.3s ease;
+}
+
+.login-container button {
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #007BFF, #38d47e);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.login-container button:hover {
+    background: linear-gradient(135deg, #0056b3, #28a745);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}

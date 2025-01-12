@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ラボ 2024わかもの in 九州</title>
+    <!-- Font Awesomeの読み込み -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS (Optional: For components like modals) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Google Fonts (新しいフォント) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- CSSの読み込み -->
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<!-- Googleアナリティクス用のコード・もみん追加 -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPFZZ3RFZV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DPFZZ3RFZV');
+</script>
+<!-- Googleアナリティクス用のコードここまで・もみん追加 -->
+<body>
+    <!-- 新ヘッダー -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://wakamono2024kyushu.com/" class="nav-link text-white text-center">
+                <img src="logo.png" class="mx-2" width="60" height="60">2024わかものin九州
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">2024わかもの in 九州</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body d-flex flex-column">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item mx-3">
+                            <a href="https://wakamono2024kyushu.com/" class="nav-link text-white text-center">
+                                <i class="fas fa-home fs-3"></i><span>ホーム</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="fes.html" class="nav-link text-white text-center">
+                                <i class="fas fa-video fs-3"></i><span>フェスティバル</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="camp.html" class="nav-link text-white text-center">
+                                <i class="fas fa-campground fs-3"></i><span>合宿</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="staff.html" class="nav-link text-white text-center">
+                                <i class="fas fa-users fs-4"></i><span>実行委員</span>
+                            </a>
+                        </li>
+                        <!-- <li class="nav-item mx-3">
+                            <a href="letter.html" class="nav-link text-white text-center">
+                                <i class="fas fa-envelope fs-2"></i><span>憧レター</span>
+                            </a>
+                        </li> -->
+                        <li class="nav-item mx-3">
+                            <a href="./ticket/ticket.html" class="nav-link text-white text-center">
+                                <i class="fas fa-ticket fs-3"></i><span>チケット購入</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="kyushu.html" class="nav-link text-white text-center">
+                                <i class="fa-solid fa-map-location-dot fs-3"></i><span>九州</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="login.html" class="nav-link text-white text-center">
+                                <i class="fas fa-user-circle fs-3"></i><span>マイページ</span>
+                            </a>
+                        </li>
+                    </ul>
+                            <!-- スペーサー -->
+                    <div class="flex-grow-1"></div>
+
+                        <!-- 下部に配置するナビゲーションリンク -->
+                    <!-- <ul class="navbar-nav mb-3">
+                        <li class="nav-item mx-3">
+                            <a href="sponsor.html" class="nav-link text-white text-center">
+                                <i class="fas fa-handshake fs-3.25"></i><span>スポンサー</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="q&a.html" class="nav-link text-white text-center">
+                                <i class="fas fa-question-circle fs-2"></i><span>  Q&A</span>
+                            </a>
+                        </li>
+                    </ul> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- メインコンテンツ -->
+    <main class="container my-5 text-center">
+        <!-- 画像の挿入 -->
+        <img src="logoanimation.gif" alt="イベント画像" class="main-image img-fluid mb-4">
+        
+        <!-- カウントダウン表示エリア -->
+        <section id="countdown" class="my-5 countdown">
+            <h2 class="display-6">2024わかもの in 九州まであと</h2>
+            <div class="countdown-timer">
+                <div class="countdown-element">
+                    <div class="circle">
+                        <span id="days" class="time">00</span>
+                    </div>
+                    <span class="label">DAYS</span>
+                </div>
+                <div class="countdown-element">
+                    <div class="circle">
+                        <span id="hours" class="time">00</span>
+                    </div>
+                    <span class="label">HOURS</span>
+                </div>
+                <div class="countdown-element">
+                    <div class="circle">
+                        <span id="minutes" class="time">00</span>
+                    </div>
+                    <span class="label">MINUTES</span>
+                </div>
+                <div class="countdown-element">
+                    <div class="circle">
+                        <span id="seconds" class="time">00</span>
+                    </div>
+                    <span class="label">SECONDS</span>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            // イベントの日付を設定
+            const eventDate = new Date('2025-02-23T09:00:00').getTime();
+            
+            // カウントダウンを更新する関数
+            function updateCountdown() {
+                const now = new Date().getTime();
+                const timeRemaining = eventDate - now;
+            
+                // 日・時間・分・秒の計算
+                const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+            
+                // カウントダウンを表示
+                document.getElementById('days').textContent = days;
+                document.getElementById('hours').textContent = hours;
+                document.getElementById('minutes').textContent = minutes;
+                document.getElementById('seconds').textContent = seconds;
+            
+                // イベントが終了した場合の処理
+                if (timeRemaining < 0) {
+                    clearInterval(countdownInterval);
+                    document.getElementById('days').textContent = "00";
+                    document.getElementById('hours').textContent = "00";
+                    document.getElementById('minutes').textContent = "00";
+                    document.getElementById('seconds').textContent = "00";
+                    document.querySelector('.countdown-timer').innerHTML = "<p>イベントが開始されました！</p>";
+                }
+            }
+            
+            // 毎秒カウントダウンを更新
+            const countdownInterval = setInterval(updateCountdown, 1000);
+        </script>
+            
+        <!-- 新しい見出し -->
+        <section class="my-5">
+            <h2 class="main-theme display-6">全体テーマ</h2>
+            <p class="lead">しあわせ</p>
+            <p>いまもこれからも私たちは幸せに生きる。</p>
+            <p>わかものを通して、たくさんの幸せを感じ、自分自身の幸せについて考えよう。</p>   
+           
+            <!-- 詳しく読むボタン -->
+            <div class="text-end">
+                <a href="theme.html" class="btn btn-primary">Read More</a>
+            </div>
+        </section>
+
+        <section class="my-5">
+            <h2 class="main-theme display-6">News</h2>
+            <!-- 横スクロール可能なカード -->
+            <div class="d-flex overflow-auto" style="white-space: nowrap;">
+                <!-- カード3 -->
+                <div class="card me-3" style="min-width: 300px; max-width: 300px; height: 400px; flex-shrink: 0;">
+                    <img src="logo.png" class="card-img-top" style="height: 180px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">12/12/2024</h5>
+                        <p class="card-text" style="overflow: hidden; text-overflow: ellipsis;">合宿参加申し込みが定員に達しました！</p>
+                        <a href="./news/news3.html" class="btn btn-primary">Read more</a>
+                    </div>
+                </div>
+                 <!-- カード2 -->
+                 <div class="card me-3" style="min-width: 300px; max-width: 300px; height: 400px; flex-shrink: 0;">
+                    <img src="2024わかものフェスティバルフライヤー.jpg" class="card-img-top" alt="2024わかものフェスティバルフライヤー" style="height: 180px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">11/10/2024</h5>
+                        <p class="card-text" style="overflow: hidden; text-overflow: ellipsis;">フライヤー完成！！</p>
+                        <a href="./news/news2.html" class="btn btn-primary">View more</a>
+                    </div>
+                </div>
+                <!-- カード1 -->
+                <div class="card me-3" style="min-width: 300px; max-width: 300px; height: 400px; flex-shrink: 0;">
+                    <img src="./news/news1.jpg" class="card-img-top" alt="インスタ" style="height: 180px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">11/10/2024</h5>
+                        <p class="card-text" style="overflow: hidden; text-overflow: ellipsis;">Instagram開設！！</p>
+                        <a href="./news/news1.html" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="w-100">
+        <div class="container">
+            <p class="d-flex justify-content-center align-items-center">
+                <!-- Instagramアイコン -->
+                <a href="https://www.instagram.com/labo_wakamono?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="text-white mx-3">
+                    <i class="fab fa-instagram"></i><span> Instagram</span>
+                </a>
+                <!-- LINEアイコン -->
+                <a href="https://lin.ee/5xKUaVV" target="_blank" class="text-white mx-3">
+                    <i class="fab fa-line"></i><span>LINE</span>
+                </a> 
+                <!-- DMアイコン (メールリンク) -->
+                <a href="mailto:wakamono2024.kyushu@gmail.com" class="text-white mx-3">
+                    <i class="fas fa-envelope"></i><span>DM</span>
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</body>
+</html>

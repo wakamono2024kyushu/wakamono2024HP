@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ラボ 2024わかもの in 九州</title>
+    <!-- Font Awesomeの読み込み -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS (Optional: For components like modals) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Google Fonts (新しいフォント) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- CSSの読み込み -->
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="camp.css">
+
+</head>
+<body>
+    <!-- 新ヘッダー -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://wakamono2024kyushu.com/" class="nav-link text-white text-center">
+                <img src="logo.png" class="mx-2" width="60" height="60">2024わかものin九州
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">わかもの合宿</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body d-flex flex-column">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item mx-3">
+                            <a href="https://wakamono2024kyushu.com/" class="nav-link text-white text-center">
+                                <i class="fas fa-home fs-3"></i><span>ホーム</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="fes.html" class="nav-link text-white text-center">
+                                <i class="fas fa-video fs-3"></i><span>フェスティバル</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="camp.html" class="nav-link text-white text-center">
+                                <i class="fas fa-campground fs-3"></i><span>合宿</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="staff.html" class="nav-link text-white text-center">
+                                <i class="fas fa-users fs-4"></i><span>実行委員</span>
+                            </a>
+                        </li>
+                        <!-- <li class="nav-item mx-3">
+                            <a href="letter.html" class="nav-link text-white text-center">
+                                <i class="fas fa-envelope fs-2"></i><span>憧レター</span>
+                            </a>
+                        </li> -->
+                        <li class="nav-item mx-3">
+                            <a href="./ticket/ticket.html" class="nav-link text-white text-center">
+                                <i class="fas fa-ticket fs-3"></i><span>チケット購入</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="kyushu.html" class="nav-link text-white text-center">
+                                <i class="fa-solid fa-map-location-dot fs-3"></i><span>九州</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="login.html" class="nav-link text-white text-center">
+                                <i class="fas fa-user-circle fs-3"></i><span>マイページ</span>
+                            </a>
+                        </li>
+                    </ul>
+                            <!-- スペーサー -->
+                    <div class="flex-grow-1"></div>
+
+                        <!-- 下部に配置するナビゲーションリンク -->
+                   <!-- <ul class="navbar-nav mb-3">
+                        <li class="nav-item mx-3">
+                            <a href="sponsor.html" class="nav-link text-white text-center">
+                                <i class="fas fa-handshake fs-3.25"></i><span>スポンサー</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="q&a.html" class="nav-link text-white text-center">
+                                <i class="fas fa-question-circle fs-2"></i><span>  Q&A</span>
+                            </a>
+                        </li>
+                    </ul> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+  
+    <!-- メインコンテンツ -->
+    <main class="container my-5">
+        <!-- 合宿のタイトル
+        <section class="text-center mb-5">
+            <h1 class="display-4 fw-bold text-primary custom-heading">わかもの合宿</h1>
+        </section> -->
+
+        <div class="cp_box1">
+            <h2 class="main-theme display-6">合宿スローガン</h2>
+            <input id="cp01" type="checkbox">
+            <label for="cp01"></label>
+            <div class="cp_container">
+              <h1 class="theme">ここで気づき、未来を築く</h1>
+                <p>私たちは、この合宿に参加する全員に幸せな未来を掴んでほしい。
+                <br>
+                そのために、今回のわかもの合宿では、自分自身の幸せに気づき、自身が幸せだと感じる未来への道筋を築きたい。</p>
+                <br>
+                <br>
+                <p>ーー今ある幸せに気づく。</p>
+                <br>
+                <br>
+                <p>幸せに気づくことで、今まで感じることのなかった幸せに目を向けることができる。
+                <br>そして、なぜ幸せを感じるのかを考えることができる。
+                <br>それらはきっと私たち1人1人にとって幸せな未来への道筋を築くヒントになるだろう。</p>
+                <br>
+                <br>
+                <p>私たちの未来は、様々な変化の中にあり、予測することは難しい。
+                <br>しかし、自分はどのように生きるのかを明確にすることで、自分らしく幸せに生きることができるのではないか。</p>
+                <br>
+                <br>
+                <p>合宿では、“これから先の10年”にフォーカスする。まずはこの10年を明確に思い描いてほしい。  
+                <br>
+                自分自身と向き合い、様々な価値観を持つわかものと意見を交わすことで、今ある幸せに気づき、幸せな未来への道筋を築いてほしい。</p>
+            </div>
+          </div>
+
+        <!-- 合宿の概要 -->
+        <section class="bg-light p-4 rounded shadow mt-5">
+            <div class="row">
+                <div class="col-md-7">
+                    <h2 class="text-center text-info custom-heading">概要</h2>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-light">
+                            <strong>日時：</strong>2025年2月23日(日) ~ 2月25日(火)
+                        </li>
+                        <li class="list-group-item bg-light">
+                            <strong>会場：</strong>英彦山青年の家
+                            <a href="https://maps.app.goo.gl/FFWCuuJXxeZtWnsm6" target="_blank" class="text-primary">
+                                <i class="fas fa-map-location-dot fs-4 map-icon"></i>MAP
+                            </a>
+                        </li>
+                        <li class="list-group-item bg-light">
+                            <strong>参加費：</strong>20,000円
+                        </li>
+                        <li class="list-group-item bg-light">
+                            <strong>注意事項：</strong>※フェスティバル会場から貸切バスで合宿会場まで移動します。
+                            <!-- <br>　　　　　　合宿のみの参加者もフェスティバル会場に集合してください。</br> -->
+                            <p>　　　　　※合宿参加者には交通費の一部援助を予定しています。</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-5">
+                    <!-- Googleマップの埋め込み -->
+                    <div class="map-container mt-3">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13309.951769229576!2d130.924364!3d33.48868!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354160d143aa8415%3A0x8a1e007169bdb184!2z56aP5bKh55yM6Iux5b2m5bGx6Z2S5bm044Gu5a62!5e0!3m2!1sja!2sjp!4v1728303881834!5m2!1sja!2sjp" 
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 注意事項
+        <section class="bg-white mt-2 p-1 rounded shadow">
+            <h3 class="text-center text-warning custom-heading">注意事項</h3>
+            <ul class="list-group list-group-flush"></ul>
+                
+        </section> -->
+
+        <!-- 申し込みボタン -->
+        <div class="text-center mt-5">
+            <a href="ticket.html" class="btn btn-primary btn-lg" target="_blank">参加申し込み</a>
+        </div>
+    </main>
+
+    <!-- BootstrapのJavaScriptの読み込み -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- フッター -->
+<footer class="w-100">
+    <div class="container">
+        <p class="d-flex justify-content-center align-items-center">
+            <!-- Instagramアイコン -->
+            <a href="https://www.instagram.com/labo_wakamono?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="text-white mx-3">
+                <i class="fab fa-instagram"></i><span> Instagram</span>
+            </a>
+            <!-- LINEアイコン -->
+            <a href="https://lin.ee/5xKUaVV" target="_blank" class="text-white mx-3">
+                <i class="fab fa-line"></i><span>LINE</span>
+            </a> 
+            <!-- DMアイコン (メールリンク) -->
+            <a href="mailto:wakamono2024.kyushu@gmail.com" class="text-white mx-3">
+                <i class="fas fa-envelope"></i><span>DM</span>
+            </a>
+        </p>
+    </div>
+</footer>
+
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</body>
+</html>
