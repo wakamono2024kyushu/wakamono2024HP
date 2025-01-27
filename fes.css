@@ -20,6 +20,21 @@ body {
     /* font-family: "Noto Sans JP", sans-serif; 見出しのフォントをNoto Sans JPに変更 */
 }
 
+.happyousya {
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 20px;
+  transition: transform 0.5s; /* アニメーションの設定 */
+}
+.happyousya:hover {
+  transform    : scale(1.1,1.1);       /* 拡大 */
+}
+
+h5 {
+    font-size: 2rem;
+}
+
 /* カスタムh2のスタイル */
 .main-theme {
     font-size: 2rem;
