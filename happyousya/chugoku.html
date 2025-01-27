@@ -108,7 +108,12 @@
         <!-- 団体写真の挿入 -->
         <img src="./chugoku/中国四国支部団体写真.jpg" alt="イベント画像" class="main-image img-fluid mb-4">
         <!-- 紹介文 -->
-
+        <h2>
+            こんにちは！私たちは中国支部大学生年代表現活動です！
+            今回、私たちは『日時計』に取り組みました。このお話は、ひょんなことから出会った若者ウィリアムと老人の温かい交流を描いた作品です。
+            私たちは「進む時計と戻せる時計」というテーマの下で、2人の心の動きを大切にした表現を試行錯誤して作ってきました。
+            皆さんも、是非ご自身の心の時計の針を巻き戻し、大切な思い出に思いを馳せながらご覧ください。
+        </h2>
         <!-- 憧れ -->
         <div>
             <h3><p class="title">憧れを追いかけて</p>
@@ -122,13 +127,32 @@
             </h3>
         </div>
                 <div class="committee-members">
-                    <!-- ここに委員の情報を追加 -->
-                    <div class="member" onclick="openPopup('HIMU.jpg')">
-                        <img src="./tohoku/HIMU.jpg" alt="写真">
+                    <!-- ここにchugokuの画像を追加 -->
+                    <div class="member" onclick="openPopup('chugoku1.jpg')">
+                        <img src="./chugoku/chugoku1.jpg" alt="写真">
                     </div>
-                    
+                    <div class="member" onclick="openPopup('chugoku2.jpg')">
+                        <img src="./chugoku/chugoku2.jpg" alt="写真">
+                    </div>
+                    <div class="member" onclick="openPopup('chugoku3.jpg')">
+                        <img src="./chugoku/chugoku3.jpg" alt="写真">
+                    </div>
+                    <div class="member" onclick="openPopup('chugoku4.jpg')">
+                        <img src="./chugoku/chugoku4.jpg" alt="写真">
+                    </div>
+                    <div class="member" onclick="openPopup('chugoku5.jpg')">
+                        <img src="./chugoku/chugoku5.jpg" alt="写真">
+                    </div>
+                    <div class="member" onclick="openPopup('chugoku6.jpg')">
+                        <img src="./chugoku/chugoku6.jpg" alt="写真">
+                    </div>
+                    <div class="member" onclick="openPopup('chugoku7.jpg')">
+                        <img src="./chugoku/chugoku7.jpg" alt="写真">
+                    </div>
+                    <div class="member" onclick="openPopup('chugoku8.jpg')">
+                        <img src="./chugoku/chugoku8.jpg" alt="写真">
+                    </div>         
         </div>
-
     </main>
 
 <!-- ポップアップのモーダル -->
@@ -142,7 +166,7 @@
 <!-- JavaScript -->
 <script>
     function openPopup(imageSrc) {
-        document.getElementById('popup-image').src = './tohoku/' + imageSrc;
+        document.getElementById('popup-image').src = './chugoku/' + imageSrc;
         document.getElementById('popup-modal').style.display = 'block';
     }
     function closePopup() {
