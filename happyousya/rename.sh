@@ -1,6 +1,6 @@
 
 ## フォルダパスを指定
-$folderPath = "C:\Users\wanna\OneDrive\ドキュメント\wakamono2024HP\happyousya\chiba"  # 適宜変更
+$folderPath = "C:\Users\wanna\OneDrive\ドキュメント\wakamono2024HP\happyousya\kansai"  # 適宜変更
 
 # フォルダ名を取得
 $folderName = Split-Path -Leaf $folderPath
