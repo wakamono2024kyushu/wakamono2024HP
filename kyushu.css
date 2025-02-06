@@ -2,9 +2,16 @@
   background-image: linear-gradient(0deg, rgba(41, 50, 51, 0.65), rgba(41, 50, 51, 0.65)), url('./kyushu/images/181.jpg');
   background-position: 50% 50%;
 }
+
+/* 背景と全体のレイアウト */
 body {
-    font-family: "Zen Maru Gothic", serif;
+  font-family: "Zen Maru Gothic", serif;
+  min-height: 100vh;
+  background-color:  hwb(169 81% 11%);
+  flex-direction: column;
+  align-items: center; /* 中央揃え */
 }
+
 .u-section-1 .u-sheet-1 {
   min-height: 691px;
 }
