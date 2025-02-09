@@ -32,3 +32,33 @@ const OPEN_CHAT_MIX_B = {
     "「めあて：よりよいラボについて考えよう！」": "https://line.me/ti/g2/Rpy20uTJLK3T5iBUflensq5UM_nx9SkoEWw6fw?utm_source=invitation&utm_medium=link_copy&utm_campaign=default",
     "祝還暦！！ラボ・パーティ盛り上げ隊！": "https://line.me/ti/g2/lBRSj1kvLA_zBJ6B6-M0ZVHhJYokqIWoVRBV9A?utm_source=invitation&utm_medium=link_copy&utm_campaign=default"
 }
+
+
+// プロフィール情報を取得
+const userInfo = JSON.parse(localStorage.getItem('userInfo'));
+const branch = userInfo.branch;
+const district = userInfo.district;
+const party = userInfo.party;
+const grade = userInfo.grade;
+const name = userInfo.name;
+const nickname = userInfo.nickname;
+const activityGroup = userInfo.activityGroup;
+const bus = userInfo.bus;
+const mixA = userInfo.mixA;
+const mixB = userInfo.mixB;
+
+// プロフィール情報を表示
+document.getElementById('branch').textContent = branch;
+document.getElementById('district').textContent = district;
+document.getElementById('party').textContent = party;
+document.getElementById('grade').textContent = grade;
+document.getElementById('name').textContent = name;
+document.getElementById('nickname').textContent = nickname;
+document.getElementById('bus').textContent = bus;
+
+document.getElementById('group').textContent = activityGroup;
+document.getElementById('group-open-chat').href = OPEN_CHAT_ACTIVITY[activityGroup];
+document.getElementById('mixA').textContent = mixA;
+document.getElementById('mixA-open-chat').href = OPEN_CHAT_MIX_A[mixA];
+document.getElementById('mixB').textContent = mixB;
+document.getElementById('mixB-open-chat').href = OPEN_CHAT_MIX_B[mixB];

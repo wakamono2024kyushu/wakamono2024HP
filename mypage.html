@@ -226,6 +226,10 @@
                         </h2>
                         <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample2">
                             <div id="group" class="accordion-body"></div>
+                            <a id="group-open-chat" href="">
+                              <i class="fa-brands fa-line"></i>
+                              オープンチャット
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -242,6 +246,10 @@
                         </h2>
                         <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample3">
                             <div id="mixA" class="accordion-body"></div>
+                            <a id="mixA-open-chat" class="accordion-body" href="">
+                              <i class="fa-brands fa-line"></i>
+                              オープンチャット
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -257,7 +265,11 @@
                             </button>
                         </h2>
                         <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample4">
-                            <div class="accordion-body"></div>
+                            <div id="mixB" class="accordion-body"></div>
+                            <a id="mixB-open-chat" class="accordion-body" href="">
+                              <i class="fa-brands fa-line"></i>
+                              オープンチャット
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -268,24 +280,7 @@
   </div>
 </main>
 
-<script>
-    // プロフィール情報を取得
-    const userInfo = JSON.parse(localStorage.getItem('userInfo'));
-    const branch = userInfo.branch;
-    const district = userInfo.district;
-    const party = userInfo.party;
-    const grade = userInfo.grade;
-    const name = userInfo.name;
-    const nickname = userInfo.nickname;
-    
-    // プロフィール情報を表示
-    document.getElementById('branch').textContent = branch;
-    document.getElementById('district').textContent = district;
-    document.getElementById('party').textContent = party;
-    document.getElementById('grade').textContent = grade;
-    document.getElementById('name').textContent = name;
-    document.getElementById('nickname').textContent = nickname;
-</script>
+<script src="./js/mypage.js"></script>
 
 <!-- フッター -->
 <footer class="w-100">
