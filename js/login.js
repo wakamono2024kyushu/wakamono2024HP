@@ -1,6 +1,6 @@
 // gasのエンドポイント
 // const api_url = "https://script.google.com/macros/s/AKfycbx96C5DoWTdc7EF5LPZvuARAlVyoTI3Jj2UOLaCQvMlU-xoktEUz_wq4tyeCSSrqfDu/exec";
-const api_url = "https://script.google.com/macros/s/AKfycbz4hlqWUi2IDAKfPjrqiJynoaSHYyQjznmwwOJcKaIlqLEdqTueXkKfDW6MAeJ2Td4vUA/exec"
+const api_url = "https://script.google.com/macros/s/AKfycbzq34IAsCrZaP1GpDm-jVhcns70vAPBUwktBhX5eM3YC84eiCe8YOOUjcw_pzOKqavPNw/exec"
 
 document.getElementById("loginForm").addEventListener("submit", function(event) {
     event.preventDefault(); // ページリロードを防止

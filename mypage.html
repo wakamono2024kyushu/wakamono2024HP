@@ -168,12 +168,30 @@
     <h1>マイページ</h1>
     <div class="profile">
         <div class="info">
-            <p><strong>支部:</strong>九州</p>
-            <p><strong>地区:</strong>福岡北</p>
-            <p><strong>パーティ:</strong>河又</p>
-            <p><strong>学年:</strong>4年</p>
-            <p><strong>名前:</strong>石部紗羽</p>
-            <p><strong>あだ名:</strong>すわん</p>
+            <p>
+              <strong>支部:</strong>
+              <span id="branch"></span>
+            </p>
+            <p>
+              <strong>地区:</strong>
+              <span id="district"></span>
+            </p>
+            <p>
+              <strong>パーティ:</strong>
+              <span id="party"></span>
+            </p>
+            <p>
+              <strong>学年:</strong>
+              <span id="grade"></span>
+            </p>
+            <p>
+              <strong>名前:</strong>
+              <span id="name"></span>
+            </p>
+            <p>
+              <strong>ニックネーム:</strong>
+              <span id="nickname"></span>
+            </p>
             
         </div>
     </div>
@@ -184,6 +202,25 @@
     </div>
   </div>
 </main>
+
+<script>
+    // プロフィール情報を取得
+    const userInfo = JSON.parse(localStorage.getItem('userInfo'));
+    const branch = userInfo.branch;
+    const district = userInfo.district;
+    const party = userInfo.party;
+    const grade = userInfo.grade;
+    const name = userInfo.name;
+    const nickname = userInfo.nickname;
+    
+    // プロフィール情報を表示
+    document.getElementById('branch').textContent = branch;
+    document.getElementById('district').textContent = district;
+    document.getElementById('party').textContent = party;
+    document.getElementById('grade').textContent = grade;
+    document.getElementById('name').textContent = name;
+    document.getElementById('nickname').textContent = nickname;
+</script>
 
 <!-- フッター -->
 <footer class="w-100">
