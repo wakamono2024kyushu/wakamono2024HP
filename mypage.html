@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ラボ わかもの2024 in 九州</title>
+    <title>ラボ・パーティ　 2024わかもの in 九州</title>
     <!-- Font Awesomeの読み込み -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-     <!-- Bootstrap CSS -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-     <!-- Bootstrap JS (Optional: For components like modals) -->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-     <!-- Google Font -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS (Optional: For components like modals) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Google Fonts (新しいフォント) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <!-- CSSの読み込み -->
-     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="mypage.css">
+
 </head>
 <body>
     <!-- 新ヘッダー -->
@@ -30,7 +31,7 @@
             </button>
             <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">マイページ</h5>
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">ログイン</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body d-flex flex-column">
@@ -143,8 +144,7 @@
                                 <i class="fas fa-question-circle fs-2"></i><span>  Q&A</span>
                             </a>
                         </li>
-                      
-                    </ul> -->
+                    </ul>-->
                 </div>
             </div>
         </div>
@@ -164,35 +164,25 @@
     
 <!-- メインコンテンツ -->
 <main>
-    <div class="login-container">
-        <div class="form-box">
-            <h1>Welcome to My Page</h1>
-            <p>Your user ID is: <span id="userId"></span></p>
-
-            <script>
-                window.onload = function() {
-                    // URLのハッシュ部分からユーザーIDを取得
-                    const userId = window.location.hash.substring(1);
-                    document.getElementById('userId').textContent = userId || 'unknown';
-                };
-            </script>
-
-            <h2>マイページログイン</h2>
-            <form action="/mypage" method="POST">
-                <div class="input-box">
-                    <label for="username"><i class="fas fa-user"></i> ユーザーネーム</label>
-                    <input type="text" id="username" name="username" required>
-                </div>
-                
-                <div class="input-box">
-                    <label for="birthdate"><i class="fas fa-calendar-alt"></i> 生年月日 (0000/00/00)</label>
-                    <input type="text" id="birthdate" name="birthdate" placeholder="YYYY/MM/DD" pattern="\d{4}/\d{2}/\d{2}" required>
-                </div>
+  <div class="container">
+    <h1>マイページ</h1>
+    <div class="profile">
+        <div class="info">
+            <p><strong>支部:</strong>九州</p>
+            <p><strong>地区:</strong>福岡北</p>
+            <p><strong>パーティ:</strong>河又</p>
+            <p><strong>学年:</strong>4年</p>
+            <p><strong>名前:</strong>石部紗羽</p>
+            <p><strong>あだ名:</strong>すわん</p>
             
-                <button type="submit">ログイン</button>
-            </form>
         </div>
     </div>
+    <h2>ギャラリー</h2>
+    <div class="gallery">
+        <img src="image1.jpg" alt="画像1">
+        <img src="image2.jpg" alt="画像2">
+    </div>
+  </div>
 </main>
 
 <!-- フッター -->

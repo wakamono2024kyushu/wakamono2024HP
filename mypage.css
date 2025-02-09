@@ -7,101 +7,115 @@
 
 /* 背景と全体のレイアウト */
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+    font-family: "Zen Maru Gothic", serif;
     min-height: 100vh;
-    background-color: hwb(169 81% 11%);
+    background-color:  hwb(169 81% 11%);
     display: flex;
     flex-direction: column;
     align-items: center; /* 中央揃え */
 }
 
-/* 中央揃えのためのmain */
-main {
-    flex-grow: 1;
+/* マイページコンテナ */
+.container {
+    width: 900px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* タイトル */
+h1 {
+    font-size: 2rem;
+    color: #444;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 2px solid #1e70ae;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+/* プロフィール情報 */
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* ユーザー情報 */
+/* 個人情報を2列で表示 */
+.info {
+    display: grid;
+    grid-template-columns: repeat(3, auto); /* 2列レイアウト */
+    gap: 10px 40px; /* 行間と列間の間隔 */
+    text-align: left;
+    font-size: 1.2rem;
+    color: #444;
+}
+
+
+/* ギャラリータイトル */
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #444;
+    border-bottom: 2px solid #1e70ae;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* ギャラリー画像 */
+.gallery {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 80px; /* ヘッダーの高さ分の余白を追加 */
+    gap: 15px;
 }
 
-/* ログインフォームのスタイル */
-.login-container {
-    width: 100%;
-    max-width: 400px;
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    animation: fadeIn 1s ease-in-out;
+.gallery img {
+    width: 45%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
-h2 {
-    margin-bottom: 30px;
-    font-size: 24px;
-    color: #333;
-    font-weight: bold;
+/* スクロールバーを非表示 */
+.overflow-auto::-webkit-scrollbar {
+    display: none;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
+.overflow-auto {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
-.input-box {
-    position: relative;
-    margin-bottom: 40px;
-    text-align: left; /* 左揃えに変更 */
-}
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .profile {
+        flex-direction: column;
+    }
 
-.input-box label {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 18px;
-    color: #333;
-    padding-left: 40px; /* アイコンのスペースを確保 */
-}
+    .profile-img {
+        width: 80px;
+        height: 80px;
+    }
 
-.input-box input {
-    width: 100%;
-    padding: 10px 40px 10px 60px; /* アイコンのスペースを確保 */
-    background: rgba(0, 0, 0, 0.05);
-    border: none;
-    border-radius: 25px;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
-    font-size: 18px;
-    outline: none;
-    transition: 0.3s ease;
-}
+    .info {
+        text-align: center;
+        font-size: 1rem;
+    }
 
-.input-box input:focus {
-    background: #fff;
-    border: 2px solid #007BFF;
-}
+    .gallery img {
+        width: 80%;
+    }
 
-.input-box i {
-    position: absolute;
-    top: 4px; /* アイコンの位置を調整 */
-    left: 10px;
-    color: #007BFF;
-    transition: color 0.3s ease;
-}
+    h1 {
+        font-size: 2rem;
+    }
 
-.login-container button {
-    padding: 12px 20px;
-    background: linear-gradient(135deg, #007BFF, #38d47e);
-    color: white;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    font-size: 18px;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-.login-container button:hover {
-    background: linear-gradient(135deg, #0056b3, #28a745);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    h2 {
+        font-size: 1.5rem;
+    }
 }
