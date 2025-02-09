@@ -164,7 +164,7 @@
     
 <!-- メインコンテンツ -->
 <main>
-  <div class="container">
+  <div class="maincontainer">
     <h1>マイページ</h1>
     <div class="profile">
         <div class="info">
@@ -196,50 +196,75 @@
         </div>
     </div>
     <h2>合宿情報</h2>
-    <div class="camp">
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                移動バス
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div id="bus" class="accordion-body"></div>
+        <div class="camp">
+          <div class="wrapper">
+      
+            <!-- コンテナ1（移動バス） -->
+            <div class="container">
+                <div class="accordion accordion-flush" id="accordionFlushExample1">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                移動バス
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample1">
+                            <div id="bus" class="accordion-body"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                グループ
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div id="group" class="accordion-body"></div>
+        
+            <!-- コンテナ2（グループ） -->
+            <div class="container">
+                <div class="accordion accordion-flush" id="accordionFlushExample2">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                グループ
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample2">
+                            <div id="group" class="accordion-body"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                交じり合え！オンリーワンなわかものたち！！A
-              </button>
-            </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div id="mixA" class="accordion-body"></div>
+        
+            <!-- コンテナ3（オンリーワンA） -->
+            <div class="container">
+                <div class="accordion accordion-flush" id="accordionFlushExample3">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                交じり合え！オンリーワンなわかものたち！！A
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample3">
+                            <div id="mixA" class="accordion-body"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                交じり合え！オンリーワンなわかものたち！！B
-              </button>
-            </h2>
-            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body"></div>
+        
+            <!-- コンテナ4（オンリーワンB） -->
+            <div class="container">
+                <div class="accordion accordion-flush" id="accordionFlushExample4">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                交じり合え！オンリーワンなわかものたち！！B
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample4">
+                            <div class="accordion-body"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+        
         </div>
-    </div>
+      </div>
   </div>
 </main>
 

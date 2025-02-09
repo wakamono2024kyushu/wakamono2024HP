@@ -16,8 +16,8 @@ body {
 }
 
 /* マイページコンテナ */
-.container {
-    width: 900px;
+.maincontainer {
+    width: 1200px;
     margin: 100px auto;
     padding: 20px;
     background-color: white;
@@ -69,10 +69,29 @@ h2 {
 }
 
 /* ギャラリー画像 */
-.caamp {
+.camp {
     display: flex;
     justify-content: center;
     gap: 15px;
+}
+
+/* アコーディオン全体の配置 */
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2列 */
+    gap: 20px; /* 間隔 */
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* 各コンテナ */
+.container {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -112,5 +131,9 @@ h2 {
 
     h2 {
         font-size: 1.5rem;
+    }
+    
+    .wrapper {
+        grid-template-columns: 1fr; /* スマホでは1列 */
     }
 }
