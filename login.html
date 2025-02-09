@@ -171,13 +171,8 @@
             <h2>マイページログイン</h2>
             <form id="loginForm" action="/login" method="POST">
                 <div class="input-box">
-                    <label for="username"><i class="fas fa-user"></i> ユーザーネーム</label>
+                    <label for="username"><i class="fas fa-user"></i>個人ID</label>
                     <input type="text" id="username" name="username" required>
-                </div>
-                
-                <div class="input-box">
-                    <label for="birthdate"><i class="fas fa-calendar-alt"></i> 生年月日 (0000/00/00)</label>
-                    <input type="text" id="birthdate" name="birthdate" placeholder="YYYY/MM/DD" pattern="\d{4}/\d{2}/\d{2}" required>
                 </div>
             
                 <button type="submit">ログイン</button>
