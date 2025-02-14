@@ -86,12 +86,25 @@ h2 {
 }
 
 /* 各コンテナ */
-.container {
+.campinfo {
     width: 100%;
     background: rgba(255, 255, 255, 0.1);
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.openchatlink {
+    color: #444;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-underline-offset: none;
+}
+
+.fa-brands {
+    color: #35db5f;
+    font-size: 5rem;
+    cursor: pointer;
 }
 
 

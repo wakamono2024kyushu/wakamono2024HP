@@ -1,139 +1,151 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ラボ・パーティ　 2024わかもの in 九州</title>
-    <!-- Font Awesomeの読み込み -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap JS (Optional: For components like modals) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Google Fonts (新しいフォント) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <!-- CSSの読み込み -->
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="mypage.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ラボ・パーティ　 2024わかもの in 九州</title>
+  <!-- Font Awesomeの読み込み -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap JS (Optional: For components like modals) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Google Fonts (新しいフォント) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <!-- CSSの読み込み -->
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="mypage.css">
 
 </head>
+
 <body>
-    <!-- 新ヘッダー -->
-    <nav class="navbar navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="https://wakamono2024kyushu.com/" class="nav-link text-white text-center">
-                <img src="logo.png" class="mx-2" width="60" height="60">2024わかものin九州
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">ログイン</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body d-flex flex-column">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item mx-3">
-                            <a href="https://wakamono2024kyushu.com/" class="nav-link text-white text-center">
-                                <i class="fas fa-home fs-3"></i><span>ホーム</span>
-                            </a>
-                        </li>
-                        <!-- フェスティバル：メインリンク＋スプリットボタン -->
-                        <li class="nav-item mx-3">
-                          <div class="d-flex align-items-center">
-                            <!-- メインリンク部分（クリックで fes.html へ遷移） -->
-                            <a href="fes.html" class="nav-link text-white text-center">
-                              <i class="fas fa-video fs-3"></i><span>フェスティバル</span>
-                            </a>
-                            <!-- スプリットボタン部分（クリックでサブ項目の表示／非表示を切替） -->
-                            <button type="button" onclick="toggleFestivalSubmenu(event)" class="btn text-white festival-toggle-btn p-2.5">
-                              <i class="fas fa-caret-down"></i>
-                            </button>
-                          </div>
-                        </li>
-              
-                        <!-- フェスティバルのサブ項目（初期状態は非表示） -->
-                        <li class="nav-item mx-3 festival-subitem" style="display: none;">
-                          <a href="fes.html" class="nav-link text-white text-center">
-                            <span>フェスティバル詳細</span>
-                          </a>
-                        </li>
-                        <li class="nav-item mx-3 festival-subitem" style="display: none;">
-                          <a href="./happyousya/kansai.html" class="nav-link text-white text-center">
-                            <span>関西支部</span>
-                          </a>
-                        </li>
-                        <li class="nav-item mx-3 festival-subitem" style="display: none;">
-                          <a href="./happyousya/chugoku.html" class="nav-link text-white text-center">
-                            <span>中国支部</span>
-                          </a>
-                        </li>
-                        <li class="nav-item mx-3 festival-subitem" style="display: none;">
-                          <a href="./happyousya/kanagawa.html" class="nav-link text-white text-center">
-                            <span>神奈川支部</span>
-                          </a>
-                        </li>
-                        <li class="nav-item mx-3 festival-subitem" style="display: none;">
-                          <a href="./happyousya/chiba.html" class="nav-link text-white text-center">
-                            <span>千葉支部</span>
-                          </a>
-                        </li><li class="nav-item mx-3 festival-subitem" style="display: none;">
-                          <a href="./happyousya/kitakan.html" class="nav-link text-white text-center">
-                            <span>北関東信越支部</span>
-                          </a>
-                        </li><li class="nav-item mx-3 festival-subitem" style="display: none;">
-                          <a href="./happyousya/tokyo.html" class="nav-link text-white text-center">
-                            <span>東京支部</span>
-                          </a>
-                        </li><li class="nav-item mx-3 festival-subitem" style="display: none;">
-                          <a href="./happyousya/tohoku.html" class="nav-link text-white text-center">
-                            <span>東北支部</span>
-                          </a>
-                        </li><li class="nav-item mx-3 festival-subitem" style="display: none;">
-                          <a href="./happyousya/kyushushibu.html" class="nav-link text-white text-center">
-                            <span>九州支部</span>
-                          </a>
-                        </li>
-    
-                        <li class="nav-item mx-3">
-                            <a href="camp.html" class="nav-link text-white text-center">
-                                <i class="fas fa-campground fs-3"></i><span>合宿</span>
-                            </a>
-                        </li>
-                        <li class="nav-item mx-3">
-                            <a href="staff.html" class="nav-link text-white text-center">
-                                <i class="fas fa-users fs-4"></i><span>実行委員</span>
-                            </a>
-                        </li>
-                        <!-- <li class="nav-item mx-3">
+  <!-- 新ヘッダー -->
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://wakamono2024kyushu.com/" class="nav-link text-white text-center">
+        <img src="logo.png" class="mx-2" width="60" height="60">2024わかものin九州
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">ログイン</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item mx-3">
+              <a href="https://wakamono2024kyushu.com/" class="nav-link text-white text-center">
+                <i class="fas fa-home fs-3"></i><span>ホーム</span>
+              </a>
+            </li>
+            <!-- フェスティバル：メインリンク＋スプリットボタン -->
+            <li class="nav-item mx-3">
+              <div class="d-flex align-items-center">
+                <!-- メインリンク部分（クリックで fes.html へ遷移） -->
+                <a href="fes.html" class="nav-link text-white text-center">
+                  <i class="fas fa-video fs-3"></i><span>フェスティバル</span>
+                </a>
+                <!-- スプリットボタン部分（クリックでサブ項目の表示／非表示を切替） -->
+                <button type="button" onclick="toggleFestivalSubmenu(event)"
+                  class="btn text-white festival-toggle-btn p-2.5">
+                  <i class="fas fa-caret-down"></i>
+                </button>
+              </div>
+            </li>
+
+            <!-- フェスティバルのサブ項目（初期状態は非表示） -->
+            <li class="nav-item mx-3 festival-subitem" style="display: none;">
+              <a href="fes.html" class="nav-link text-white text-center">
+                <span>フェスティバル詳細</span>
+              </a>
+            </li>
+            <li class="nav-item mx-3 festival-subitem" style="display: none;">
+              <a href="./happyousya/kansai.html" class="nav-link text-white text-center">
+                <span>関西支部</span>
+              </a>
+            </li>
+            <li class="nav-item mx-3 festival-subitem" style="display: none;">
+              <a href="./happyousya/chugoku.html" class="nav-link text-white text-center">
+                <span>中国支部</span>
+              </a>
+            </li>
+            <li class="nav-item mx-3 festival-subitem" style="display: none;">
+              <a href="./happyousya/kanagawa.html" class="nav-link text-white text-center">
+                <span>神奈川支部</span>
+              </a>
+            </li>
+            <li class="nav-item mx-3 festival-subitem" style="display: none;">
+              <a href="./happyousya/chiba.html" class="nav-link text-white text-center">
+                <span>千葉支部</span>
+              </a>
+            </li>
+            <li class="nav-item mx-3 festival-subitem" style="display: none;">
+              <a href="./happyousya/kitakan.html" class="nav-link text-white text-center">
+                <span>北関東信越支部</span>
+              </a>
+            </li>
+            <li class="nav-item mx-3 festival-subitem" style="display: none;">
+              <a href="./happyousya/tokyo.html" class="nav-link text-white text-center">
+                <span>東京支部</span>
+              </a>
+            </li>
+            <li class="nav-item mx-3 festival-subitem" style="display: none;">
+              <a href="./happyousya/tohoku.html" class="nav-link text-white text-center">
+                <span>東北支部</span>
+              </a>
+            </li>
+            <li class="nav-item mx-3 festival-subitem" style="display: none;">
+              <a href="./happyousya/kyushushibu.html" class="nav-link text-white text-center">
+                <span>九州支部</span>
+              </a>
+            </li>
+
+            <li class="nav-item mx-3">
+              <a href="camp.html" class="nav-link text-white text-center">
+                <i class="fas fa-campground fs-3"></i><span>合宿</span>
+              </a>
+            </li>
+            <li class="nav-item mx-3">
+              <a href="staff.html" class="nav-link text-white text-center">
+                <i class="fas fa-users fs-4"></i><span>実行委員</span>
+              </a>
+            </li>
+            <!-- <li class="nav-item mx-3">
                             <a href="letter.html" class="nav-link text-white text-center">
                                 <i class="fas fa-envelope fs-2"></i><span>憧レター</span>
                             </a>
                         </li> -->
-                        <li class="nav-item mx-3">
-                            <a href="./ticket/ticket.html" class="nav-link text-white text-center">
-                                <i class="fas fa-ticket fs-3"></i><span>チケット購入</span>
-                            </a>
-                        </li>
-                        <li class="nav-item mx-3">
-                            <a href="kyushu.html" class="nav-link text-white text-center">
-                                <i class="fa-solid fa-map-location-dot fs-3"></i><span>九州</span>
-                            </a>
-                        </li>
-                        <li class="nav-item mx-3">
-                            <a href="login.html" class="nav-link text-white text-center">
-                                <i class="fas fa-user-circle fs-3"></i><span>マイページ</span>
-                            </a>
-                        </li>
-                    </ul>
-                            <!-- スペーサー -->
-                    <div class="flex-grow-1"></div>
+            <li class="nav-item mx-3">
+              <a href="./ticket/ticket.html" class="nav-link text-white text-center">
+                <i class="fas fa-ticket fs-3"></i><span>チケット購入</span>
+              </a>
+            </li>
+            <li class="nav-item mx-3">
+              <a href="kyushu.html" class="nav-link text-white text-center">
+                <i class="fa-solid fa-map-location-dot fs-3"></i><span>九州</span>
+              </a>
+            </li>
+            <li class="nav-item mx-3">
+              <a href="login.html" class="nav-link text-white text-center">
+                <i class="fas fa-user-circle fs-3"></i><span>マイページ</span>
+              </a>
+            </li>
+          </ul>
+          <!-- スペーサー -->
+          <div class="flex-grow-1"></div>
 
-                        <!-- 下部に配置するナビゲーションリンク -->
-                   <!-- <ul class="navbar-nav mb-3">
+          <!-- 下部に配置するナビゲーションリンク -->
+          <!-- <ul class="navbar-nav mb-3">
                         <li class="nav-item mx-3">
                             <a href="sponsor.html" class="nav-link text-white text-center">
                                 <i class="fas fa-handshake fs-3.25"></i><span>スポンサー</span>
@@ -145,165 +157,197 @@
                             </a>
                         </li>
                     </ul>-->
-                </div>
-            </div>
-        </div>
-    </nav>
-    
-    <!-- JavaScriptでサブ項目の表示/非表示を切替 -->
-    <script>
-      function toggleFestivalSubmenu(event) {
-        event.preventDefault(); // ボタン押下時の不要なリンク遷移を防止
-        const submenuItems = document.querySelectorAll('.festival-subitem');
-        submenuItems.forEach(function(item) {
-          // 現在の表示状態に応じて切替
-          item.style.display = (item.style.display === "none" || item.style.display === "") ? "block" : "none";
-        });
-      }
-    </script>
-    
-<!-- メインコンテンツ -->
-<main>
-  <div class="maincontainer">
-    <h1>マイページ</h1>
-    <div class="profile">
-        <div class="info">
-            <p>
-              <strong>支部:</strong>
-              <span id="branch"></span>
-            </p>
-            <p>
-              <strong>地区:</strong>
-              <span id="district"></span>
-            </p>
-            <p>
-              <strong>パーティ:</strong>
-              <span id="party"></span>
-            </p>
-            <p>
-              <strong>学年:</strong>
-              <span id="grade"></span>
-            </p>
-            <p>
-              <strong>名前:</strong>
-              <span id="name"></span>
-            </p>
-            <p>
-              <strong>ニックネーム:</strong>
-              <span id="nickname"></span>
-            </p>
-            
-        </div>
-    </div>
-    <h2>合宿情報</h2>
-        <div class="camp">
-          <div class="wrapper">
-      
-            <!-- コンテナ1（移動バス） -->
-            <div class="container">
-                <div class="accordion accordion-flush" id="accordionFlushExample1">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                移動バス
-                            </button>
-                        </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample1">
-                            <div id="bus" class="accordion-body"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <!-- コンテナ2（グループ） -->
-            <div class="container">
-                <div class="accordion accordion-flush" id="accordionFlushExample2">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                グループ
-                            </button>
-                        </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample2">
-                            <div id="group" class="accordion-body"></div>
-                            <a id="group-open-chat" href="">
-                              <i class="fa-brands fa-line"></i>
-                              オープンチャット
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <!-- コンテナ3（オンリーワンA） -->
-            <div class="container">
-                <div class="accordion accordion-flush" id="accordionFlushExample3">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                交じり合え！オンリーワンなわかものたち！！A
-                            </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample3">
-                            <div id="mixA" class="accordion-body"></div>
-                            <a id="mixA-open-chat" class="accordion-body" href="">
-                              <i class="fa-brands fa-line"></i>
-                              オープンチャット
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <!-- コンテナ4（オンリーワンB） -->
-            <div class="container">
-                <div class="accordion accordion-flush" id="accordionFlushExample4">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                                交じり合え！オンリーワンなわかものたち！！B
-                            </button>
-                        </h2>
-                        <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample4">
-                            <div id="mixB" class="accordion-body"></div>
-                            <a id="mixB-open-chat" class="accordion-body" href="">
-                              <i class="fa-brands fa-line"></i>
-                              オープンチャット
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
         </div>
       </div>
-  </div>
-</main>
-
-<script src="./js/mypage.js"></script>
-
-<!-- フッター -->
-<footer class="w-100">
-    <div class="container">
-        <p class="d-flex justify-content-center align-items-center">
-            <!-- Instagramアイコン -->
-            <a href="https://www.instagram.com/labo_wakamono?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="text-white mx-3">
-                <i class="fab fa-instagram"></i><span> Instagram</span>
-            </a>
-            <!-- LINEアイコン -->
-            <a href="https://line.me/" target="_blank" class="text-white mx-3">
-                <i class="fab fa-line"></i><span>LINE</span>
-            </a>
-            <!-- DMアイコン (メールリンク) -->
-            <a href="mailto:wakamonokyushu2024@gmail.com" class="text-white mx-3">
-                <i class="fas fa-envelope"></i><span>DM</span>
-            </a>
-        </p>
     </div>
-</footer>
+  </nav>
 
-<!-- Font Awesome -->
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <!-- JavaScriptでサブ項目の表示/非表示を切替 -->
+  <script>
+    function toggleFestivalSubmenu(event) {
+      event.preventDefault(); // ボタン押下時の不要なリンク遷移を防止
+      const submenuItems = document.querySelectorAll('.festival-subitem');
+      submenuItems.forEach(function (item) {
+        // 現在の表示状態に応じて切替
+        item.style.display = (item.style.display === "none" || item.style.display === "") ? "block" : "none";
+      });
+    }
+  </script>
+
+  <!-- メインコンテンツ -->
+  <main>
+    <div class="maincontainer">
+      <h1>マイページ</h1>
+      <div class="profile">
+        <div class="info">
+          <p>
+            <strong>支部:</strong>
+            <span id="branch"></span>
+          </p>
+          <p>
+            <strong>地区:</strong>
+            <span id="district"></span>
+          </p>
+          <p>
+            <strong>パーティ:</strong>
+            <span id="party"></span>
+          </p>
+          <p>
+            <strong>学年:</strong>
+            <span id="grade"></span>
+          </p>
+          <p>
+            <strong>名前:</strong>
+            <span id="name"></span>
+          </p>
+          <p>
+            <strong>ニックネーム:</strong>
+            <span id="nickname"></span>
+          </p>
+
+        </div>
+      </div>
+      <h2>合宿情報</h2>
+      <div class="camp">
+        <div class="wrapper">
+
+          <!-- コンテナ1（移動バス） -->
+          <div class="campinfo container">
+            <div class="accordion accordion-flush" id="accordionFlushExample1">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    移動バス
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample1">
+                  <div id="bus" class="accordion-body"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- コンテナ2（グループ） -->
+          <div class="campinfo container">
+            <div class="accordion accordion-flush" id="accordionFlushExample2">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    グループ
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample2">
+                  <div id="group" class="accordion-body"></div>
+                  <a id="group-open-chat" class="openchatlink" href="">
+                    <i class="fa-brands fa-line"></i>
+                    オープンチャット
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- コンテナ3（オンリーワンA） -->
+          <div class="campinfo container">
+            <div class="accordion accordion-flush" id="accordionFlushExample3">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    交じり合え！オンリーワンなわかものたち！！A
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample3">
+                  <div id="mixA" class="accordion-body"></div>
+                  <a id="mixA-open-chat" class="openchatlink" href="">
+                    <i class="fa-brands fa-line"></i>
+                    オープンチャット
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- コンテナ4（オンリーワンB） -->
+          <div class="campinfo container">
+            <div class="accordion accordion-flush" id="accordionFlushExample4">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    交じり合え！オンリーワンなわかものたち！！B
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample4">
+                  <div id="mixB" class="accordion-body"></div>
+                  <a id="mixB-open-chat" class="openchatlink" href="">
+                    <i class="fa-brands fa-line"></i>
+                    オープンチャット
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- コンテナ5（アフター） -->
+          <div class="campinfo container">
+            <div class="accordion accordion-flush" id="accordionFlushExample5">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFour">
+                    アフター
+                  </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample5">
+                  <div id="after" class="accordion-body"></div>
+                  <a id="after-open-chat" class="openchatlink" href="">
+                    <i class="fa-brands fa-line"></i>
+                    オープンチャット
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="./js/mypage.js"></script>
+
+  <!-- フッター -->
+  <footer class="w-100">
+    <div class="container">
+      <p class="d-flex justify-content-center align-items-center">
+        <!-- Instagramアイコン -->
+        <a href="https://www.instagram.com/labo_wakamono?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          target="_blank" class="text-white mx-3">
+          <i class="fab fa-instagram"></i><span> Instagram</span>
+        </a>
+        <!-- LINEアイコン -->
+        <a href="https://line.me/" target="_blank" class="text-white mx-3">
+          <i class="fab fa-line"></i><span>LINE</span>
+        </a>
+        <!-- DMアイコン (メールリンク) -->
+        <a href="mailto:wakamonokyushu2024@gmail.com" class="text-white mx-3">
+          <i class="fas fa-envelope"></i><span>DM</span>
+        </a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 </body>
+
 </html>

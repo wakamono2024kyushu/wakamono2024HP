@@ -10,10 +10,10 @@ const OPEN_CHAT_ACTIVITY = {
 }
 
 const OPEN_CHAT_GRADE = {
-    "1": "https://line.me/ti/g2/cuoBwRsmfvLJI4oRQgTE92e7rX06b5GbUuuTjw?utm_source=invitation&utm_medium=link_copy&utm_campaign=default",
-    "2": "https://line.me/ti/g2/nQRN38wQVbCZE7oyiTQMglojMferZ1orlsjUQw?utm_source=invitation&utm_medium=link_copy&utm_campaign=default",
-    "3": "https://line.me/ti/g2/5npSDMagU9Iqh8rTDtKX2gpGdMzDx70xRosiww?utm_source=invitation&utm_medium=link_copy&utm_campaign=default",
-    "4": "https://line.me/ti/g2/_BOsHL7VidhV_m23NS68CJnXlz77zcIZteg7rQ?utm_source=invitation&utm_medium=link_copy&utm_campaign=default",
+    "1年生": "https://line.me/ti/g2/cuoBwRsmfvLJI4oRQgTE92e7rX06b5GbUuuTjw?utm_source=invitation&utm_medium=link_copy&utm_campaign=default",
+    "2年生": "https://line.me/ti/g2/nQRN38wQVbCZE7oyiTQMglojMferZ1orlsjUQw?utm_source=invitation&utm_medium=link_copy&utm_campaign=default",
+    "3年生": "https://line.me/ti/g2/5npSDMagU9Iqh8rTDtKX2gpGdMzDx70xRosiww?utm_source=invitation&utm_medium=link_copy&utm_campaign=default",
+    "4年生": "https://line.me/ti/g2/_BOsHL7VidhV_m23NS68CJnXlz77zcIZteg7rQ?utm_source=invitation&utm_medium=link_copy&utm_campaign=default",
 }
 
 const OPEN_CHAT_MIX_A = {
@@ -62,3 +62,5 @@ document.getElementById('mixA').textContent = mixA;
 document.getElementById('mixA-open-chat').href = OPEN_CHAT_MIX_A[mixA];
 document.getElementById('mixB').textContent = mixB;
 document.getElementById('mixB-open-chat').href = OPEN_CHAT_MIX_B[mixB];
+document.getElementById('after').textContent = grade;
+document.getElementById('after-open-chat').href = OPEN_CHAT_GRADE[grade];
