@@ -1,6 +1,6 @@
 // gasのエンドポイント
 // const api_url = "https://script.google.com/macros/s/AKfycbx96C5DoWTdc7EF5LPZvuARAlVyoTI3Jj2UOLaCQvMlU-xoktEUz_wq4tyeCSSrqfDu/exec";
-const api_url = "https://script.google.com/macros/s/AKfycbzq34IAsCrZaP1GpDm-jVhcns70vAPBUwktBhX5eM3YC84eiCe8YOOUjcw_pzOKqavPNw/exec"
+const api_url = "https://script.google.com/macros/s/AKfycbz0VxxRhckPNFnmFbjB63f9V7vMaXo1RY6XKeUcARaLg4ey8OjNIyORijzSNE2KfHasBw/exec"
 
 document.getElementById("loginForm").addEventListener("submit", function(event) {
     event.preventDefault(); // ページリロードを防止
@@ -39,10 +39,14 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
                     "party": decodeURIComponent(json.party),
                     "grade": decodeURIComponent(json.grade),
                     "activityGroup": decodeURIComponent(json.activityGroup),
+                    "activityGroupRoom": decodeURIComponent(json.activityGroupRoom),
                     "groupChat": decodeURIComponent(json.groupChat),
                     "bus": decodeURIComponent(json.bus),
                     "mixA": decodeURIComponent(json.mixA),
+                    "mixARoom": decodeURIComponent(json.mixARoom),
                     "mixB": decodeURIComponent(json.mixB),
+                    "mixBRoom": decodeURIComponent(json.mixBRoom),
+                    "accomodationRoom": decodeURIComponent(json.accomodationRoom),
                 }
                 console.log(userInfo);
                 // ローカルストレージに保存
