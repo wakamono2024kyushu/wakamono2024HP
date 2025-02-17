@@ -43,13 +43,13 @@ const grade = userInfo.grade;
 const name = userInfo.name;
 const nickname = userInfo.nickname;
 const activityGroup = userInfo.activityGroup;
+const activityGroupRoom = userInfo.activityGroupRoom;
 const bus = userInfo.bus;
 const mixA = userInfo.mixA;
+const mixAroom = userInfo.mixARoom;
 const mixB = userInfo.mixB;
-const grouproom = userInfo.grouproom;
-const mixAroom = userInfo.mixAroom;
-const mixBroom = userInfo.mixBroom;
-const room = userInfo.room;
+const mixBroom = userInfo.mixBRoom;
+const room = userInfo.accomodationRoom;
 
 // プロフィール情報を表示
 document.getElementById('branch').textContent = branch;
@@ -63,7 +63,7 @@ document.getElementById('room').textContent = room;
 document.getElementById('room-img').scr = `img/${room}.png`;  // 画像のパスを設定
 document.getElementById('group').textContent = activityGroup;
 document.getElementById('group-open-chat').href = OPEN_CHAT_ACTIVITY[activityGroup];
-document.getElementById('grouproom').textContent = grouproom;
+document.getElementById('grouproom').textContent = activityGroupRoom;
 document.getElementById('grouproom-img').scr = `img/${grouproom}.png`;  // 画像のパスを設定
 document.getElementById('mixA').textContent = mixA;
 document.getElementById('mixA-open-chat').href = OPEN_CHAT_MIX_A[mixA];
