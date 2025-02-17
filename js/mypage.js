@@ -46,6 +46,10 @@ const activityGroup = userInfo.activityGroup;
 const bus = userInfo.bus;
 const mixA = userInfo.mixA;
 const mixB = userInfo.mixB;
+const grouproom = userInfo.grouproom;
+const mixAroom = userInfo.mixAroom;
+const mixBroom = userInfo.mixBroom;
+const room = userInfo.room;
 
 // プロフィール情報を表示
 document.getElementById('branch').textContent = branch;
@@ -55,12 +59,23 @@ document.getElementById('grade').textContent = grade;
 document.getElementById('name').textContent = name;
 document.getElementById('nickname').textContent = nickname;
 document.getElementById('bus').textContent = bus;
-
+document.getElementById('room').textContent = room;
+document.getElementById('room-img').scr = `img/${room}.png`;  // 画像のパスを設定
 document.getElementById('group').textContent = activityGroup;
 document.getElementById('group-open-chat').href = OPEN_CHAT_ACTIVITY[activityGroup];
+document.getElementById('grouproom').textContent = grouproom;
+document.getElementById('grouproom-img').scr = `img/${grouproom}.png`;  // 画像のパスを設定
 document.getElementById('mixA').textContent = mixA;
 document.getElementById('mixA-open-chat').href = OPEN_CHAT_MIX_A[mixA];
+document.getElementById('mixAroom').textContent = mixAroom;
+document.getElementById('mixAroom-img').scr = `img/${mixAroom}.png`;  // 画像のパスを設定
 document.getElementById('mixB').textContent = mixB;
 document.getElementById('mixB-open-chat').href = OPEN_CHAT_MIX_B[mixB];
+document.getElementById('mixBroom').textContent = mixBroom;
+document.getElementById('mixBroom-img').scr = `img/${mixBroom}.png`;  // 画像のパスを設定
 document.getElementById('after').textContent = grade;
 document.getElementById('after-open-chat').href = OPEN_CHAT_GRADE[grade];
+
+// ログアウトボタンをクリックしたときの処理
+
+
