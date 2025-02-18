@@ -24,17 +24,20 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     text-align: center;
+    margin-top: 20px;
 }
 
 /* タイトル */
 h1 {
-    font-size: 2rem;
-    color: #444;
-    text-align: left;
-    font-weight: bold;
-    border-bottom: 2px solid #1e70ae;
-    padding-bottom: 10px;
-    margin-bottom: 30px;
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(90deg, #01659b, #1c8c9b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 120px;
 }
 
 /* プロフィール情報 */
@@ -66,13 +69,7 @@ h2 {
     border-bottom: 2px solid #1e70ae;
     padding-bottom: 10px;
     margin-bottom: 15px;
-}
-
-/* ギャラリー画像 */
-.camp {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+    text-align: left;
 }
 
 /* アコーディオン全体の配置 */
@@ -129,13 +126,8 @@ h2 {
 
 /* レスポンシブ対応 */
 @media (max-width: 768px) {
-    .profile {
-        flex-direction: column;
-    }
-
-    .profile-img {
-        width: 70px;
-        height: 70px;
+    .maincontainer {
+        width: 90%;
     }
 
     .info {
@@ -149,18 +141,32 @@ h2 {
     }
 
     h1 {
-        font-size: 1.6rem;
+        margin-top: 90px;
+        font-size: 2rem;
     }
 
     h2 {
-        font-size: 1.4rem;
+        text-align: left;
+        font-size: 1.2rem;
+        margin-top: 10px;
     }
 
     .wrapper {
         grid-template-columns: 1fr; /* スマホでは1列 */
+
     }
 
-    .campinfo {
-        padding: 15px;
+    /* ナビゲーションの調整 */
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar-brand img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .navbar-toggler {
+        padding: 5px;
     }
 }

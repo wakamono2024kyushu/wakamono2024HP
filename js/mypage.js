@@ -36,6 +36,7 @@ const OPEN_CHAT_MIX_B = {
 // 講堂	研1	研2	研3	研4	研5	研7
 const ACTIVITY_GROUP_ROOM = {
     "講堂": "koudou",
+    "第1研究室": "ken1",
     "第2研究室": "ken2",
     "第3研究室": "ken3",
     "第4研究室": "ken4",
@@ -45,6 +46,7 @@ const ACTIVITY_GROUP_ROOM = {
 
 const MIXA_ROOM = {
     "講堂": "koudou",
+    "第1研究室": "ken1",
     "第2研究室": "ken2",
     "第3研究室": "ken3",
     "第4研究室": "ken4",
