@@ -134,28 +134,33 @@ h2 {
     }
 
     .profile-img {
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px;
     }
 
     .info {
         text-align: center;
-        font-size: 1rem;
+        font-size: 0.9rem;
+        grid-template-columns: 1fr;
     }
 
     .camp img {
-        width: 80%;
+        width: 100%;
     }
 
     h1 {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
-    
+
     .wrapper {
         grid-template-columns: 1fr; /* スマホでは1列 */
+    }
+
+    .campinfo {
+        padding: 15px;
     }
 }
