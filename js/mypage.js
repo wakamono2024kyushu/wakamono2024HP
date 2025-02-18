@@ -64,26 +64,36 @@ const MIXB_ROOM = {
 
 // 3A-1~3A-10 2B-1~2B-10 3B-1~3B-10	
 const ACCOMODATION_ROOM = {
-    "3A-1": "Aroom",
-    "3A-2": "Aroom",
-    "3A-3": "Aroom",
-    "3A-4": "Aroom",
-    "3A-5": "Aroom",
-    "3A-6": "Aroom",
-    "3A-7": "Aroom",
-    "3A-8": "Aroom",
-    "3A-9": "Aroom",
-    "3A-10": "Aroom",
-    "2B-1": "Broom",
-    "2B-2": "Broom",
-    "2B-3": "Broom",
-    "2B-4": "Broom",
-    "2B-5": "Broom",
-    "2B-6": "Broom",
-    "2B-7": "Broom",
-    "2B-8": "Broom",
-    "2B-9": "Broom",
-    "2B-10": "Broom",
+    "2A-1": "2Aroom",
+    "2A-2": "2Aroom",
+    "2A-3": "2Aroom",
+    "2A-4": "2Aroom",
+    "2A-5": "2Aroom",
+    "2A-6": "2Aroom",
+    "2A-7": "2Aroom",
+    "2A-8": "2Aroom",
+    "2A-9": "2Aroom",
+    "2A-10": "2Aroom",
+    "3A-1": "3Aroom",
+    "3A-2": "3Aroom",
+    "3A-3": "3Aroom",
+    "3A-4": "3Aroom",
+    "3A-5": "3Aroom",
+    "3A-6": "3Aroom",
+    "3A-7": "3Aroom",
+    "3A-8": "3Aroom",
+    "3A-9": "3Aroom",
+    "3A-10": "3Aroom",
+    "2B-1": "2Broom",
+    "2B-2": "2Broom",
+    "2B-3": "2Broom",
+    "2B-4": "2Broom",
+    "2B-5": "2Broom",
+    "2B-6": "2Broom",
+    "2B-7": "2Broom",
+    "2B-8": "2Broom",
+    "2B-9": "2Broom",
+    "2B-10": "2Broom",
     "3B-1": "3Broom",
     "3B-2": "3Broom",
     "3B-3": "3Broom",
@@ -122,20 +132,20 @@ document.getElementById('grade').textContent = grade;
 document.getElementById('name').textContent = name;
 document.getElementById('nickname').textContent = nickname;
 document.getElementById('bus').textContent = bus;
-// document.getElementById('room').textContent = room;
-// document.getElementById('room-img').src = `room_img/${ACCOMODATION_ROOM[room]}.png`;  // 画像のパスを設定
+document.getElementById('room').textContent = room;
+document.getElementById('room-img').src = `room_img/${ACCOMODATION_ROOM[room]}.jpg`;  // 画像のパスを設定
 document.getElementById('group').textContent = activityGroup;
 document.getElementById('group-open-chat').href = OPEN_CHAT_ACTIVITY[activityGroup];
 document.getElementById('grouproom').textContent = activityGroupRoom;
-document.getElementById('grouproom-img').src = `room_img/${ACTIVITY_GROUP_ROOM[activityGroupRoom]}.png`;  // 画像のパスを設定
+document.getElementById('grouproom-img').src = `room_img/${ACTIVITY_GROUP_ROOM[activityGroupRoom]}.jpg`;  // 画像のパスを設定
 document.getElementById('mixA').textContent = mixA;
 document.getElementById('mixA-open-chat').href = OPEN_CHAT_MIX_A[mixA];
 document.getElementById('mixAroom').textContent = mixAroom;
-document.getElementById('mixAroom-img').src = `room_img/${MIXA_ROOM[mixAroom]}.png`;  // 画像のパスを設定
+document.getElementById('mixAroom-img').src = `room_img/${MIXA_ROOM[mixAroom]}.jpg`;  // 画像のパスを設定
 document.getElementById('mixB').textContent = mixB;
 document.getElementById('mixB-open-chat').href = OPEN_CHAT_MIX_B[mixB];
 document.getElementById('mixBroom').textContent = mixBroom;
-document.getElementById('mixBroom-img').src = `room_img/${MIXB_ROOM[mixBroom]}.png`;  // 画像のパスを設定
+document.getElementById('mixBroom-img').src = `room_img/${MIXB_ROOM[mixBroom]}.jpg`;  // 画像のパスを設定
 document.getElementById('after').textContent = grade;
 document.getElementById('after-open-chat').href = OPEN_CHAT_GRADE[grade];
 

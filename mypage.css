@@ -107,6 +107,15 @@ h2 {
     cursor: pointer;
 }
 
+.map-img {
+    width: 80%;
+}
+
+.room-img {
+    width: 100%;
+    border-radius: 8px;
+}
+
 
 /* スクロールバーを非表示 */
 .overflow-auto::-webkit-scrollbar {
