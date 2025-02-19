@@ -194,6 +194,20 @@ a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.kaikan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.kaikan-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
 @media (max-width: 768px) {
   .main-theme {
       font-size: 1.3rem;

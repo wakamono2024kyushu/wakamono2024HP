@@ -152,7 +152,7 @@ a.instagram-btn {
     padding: 10px 20px;
     background-color: #e1306c; /* インスタグラムのブランドカラー */
     color: #fff;
-    font-size: 1.1rem;
+    font-size: 2rem;
     font-weight: bold;
     border-radius: 25px;
     text-decoration: none;
@@ -160,6 +160,7 @@ a.instagram-btn {
     margin-right: 70px;
     margin-left: 60px;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 a.instagram-btn i {
