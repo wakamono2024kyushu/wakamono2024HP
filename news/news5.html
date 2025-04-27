@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ラボ・パーティ　 2024わかもの in 九州</title>
+    <!-- Font Awesomeの読み込み -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS (Optional: For components like modals) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Google Fonts (新しいフォント) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- CSSの読み込み -->
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="news1.css">
+
+</head>
+
+<body>
+    <!-- 新ヘッダー -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://wakamono2024kyushu.com/" class="nav-link text-white text-center">
+                <img src="../logo.png" class="mx-2" width="60" height="60">2024わかものin九州
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">news1</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body d-flex flex-column">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item mx-3">
+                            <a href="https://wakamono2024kyushu.com/" class="nav-link text-white text-center">
+                                <i class="fas fa-home fs-3"></i><span>ホーム</span>
+                            </a>
+                        </li>
+                          <!-- フェスティバル：メインリンク＋スプリットボタン -->
+                        <li class="nav-item mx-3">
+                            <div class="d-flex align-items-center">
+                            <!-- メインリンク部分（クリックで fes.html へ遷移） -->
+                            <a href="../fes.html" class="nav-link text-white text-center">
+                                <i class="fas fa-video fs-3"></i><span>フェスティバル</span>
+                            </a>
+                            <!-- スプリットボタン部分（クリックでサブ項目の表示／非表示を切替） -->
+                            <button type="button" onclick="toggleFestivalSubmenu(event)" class="btn text-white festival-toggle-btn p-2.5">
+                                <i class="fas fa-caret-down"></i>
+                            </button>
+                            </div>
+                        </li>
+                
+                        <!-- フェスティバルのサブ項目（初期状態は非表示） -->
+                        <li class="nav-item mx-3 festival-subitem" style="display: none;">
+                            <a href="../fes.html" class="nav-link text-white text-center">
+                            <span>フェスティバル詳細</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3 festival-subitem" style="display: none;">
+                            <a href="./happyousya/kansai.html" class="nav-link text-white text-center">
+                            <span>関西支部</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3 festival-subitem" style="display: none;">
+                            <a href="./happyousya/chugoku.html" class="nav-link text-white text-center">
+                            <span>中国支部</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3 festival-subitem" style="display: none;">
+                            <a href="./happyousya/kanagawa.html" class="nav-link text-white text-center">
+                            <span>神奈川支部</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3 festival-subitem" style="display: none;">
+                            <a href="./happyousya/chubu.html" class="nav-link text-white text-center">
+                            <span>中部支部</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3 festival-subitem" style="display: none;">
+                            <a href="./happyousya/chiba.html" class="nav-link text-white text-center">
+                            <span>千葉支部</span>
+                            </a>
+                        </li><li class="nav-item mx-3 festival-subitem" style="display: none;">
+                            <a href="./happyousya/kitakan.html" class="nav-link text-white text-center">
+                            <span>北関東信越支部</span>
+                            </a>
+                        </li><li class="nav-item mx-3 festival-subitem" style="display: none;">
+                            <a href="./happyousya/tokyo.html" class="nav-link text-white text-center">
+                            <span>東京支部</span>
+                            </a>
+                        </li><li class="nav-item mx-3 festival-subitem" style="display: none;">
+                            <a href="./happyousya/tohoku.html" class="nav-link text-white text-center">
+                            <span>東北支部</span>
+                            </a>
+                        </li><li class="nav-item mx-3 festival-subitem" style="display: none;">
+                            <a href="./happyousya/kyushushibu.html" class="nav-link text-white text-center">
+                            <span>九州支部</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="../camp.html" class="nav-link text-white text-center">
+                                <i class="fas fa-campground fs-3"></i><span>合宿</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="../staff.html" class="nav-link text-white text-center">
+                                <i class="fas fa-users fs-4"></i><span>実行委員</span>
+                            </a>
+                        </li>
+                        <!-- <li class="nav-item mx-3">
+                            <a href="../letter.html" class="nav-link text-white text-center">
+                                <i class="fas fa-envelope fs-2"></i><span>憧レター</span>
+                            </a>
+                        </li> -->
+                        <li class="nav-item mx-3">
+                            <a href="./ticket/ticket.html" class="nav-link text-white text-center">
+                                <i class="fas fa-ticket fs-3"></i><span>チケット購入</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="../kyushu.html" class="nav-link text-white text-center">
+                                <i class="fa-solid fa-map-location-dot fs-3"></i><span>九州</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="../login.html" class="nav-link text-white text-center">
+                                <i class="fas fa-user-circle fs-3"></i><span>マイページ</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- スペーサー -->
+                    <div class="flex-grow-1"></div>
+
+                    <!-- 下部に配置するナビゲーションリンク -->
+                <!-- <ul class="navbar-nav mb-3">
+                    <li class="nav-item mx-3">
+                        <a href="sponsor.html" class="nav-link text-white text-center">
+                            <i class="fas fa-handshake fs-3.25"></i><span>スポンサー</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a href="q&a.html" class="nav-link text-white text-center">
+                            <i class="fas fa-question-circle fs-2"></i><span>  Q&A</span>
+                        </a>
+                    </li>
+                </ul> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<!-- JavaScriptでサブ項目の表示/非表示を切替 -->
+<script>
+function toggleFestivalSubmenu(event) {
+    event.preventDefault(); // ボタン押下時の不要なリンク遷移を防止
+    const submenuItems = document.querySelectorAll('.festival-subitem');
+    submenuItems.forEach(function(item) {
+    // 現在の表示状態に応じて切替
+    item.style.display = (item.style.display === "none" || item.style.display === "") ? "block" : "none";
+    });
+}
+</script>  
+
+    <!-- メインコンテンツ -->
+    <main class="container my-5">
+        <section class="my-5">
+            <h2 class="main-theme display-6">アーカイブ動画公開のお知らせ </h2>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+            <p>フェスティバル発表のアーカイブ動画を公開しました！当日発表を見逃してしまった方、もう一度見たい方はぜひこちらをご覧ください！</p>
+            <a href="../video.html" target="_blank" class="instagram-btn">アーカイブ動画を見る</a>
+            </li>
+        </section>
+
+                <!-- ニュースのナビゲーションボタンとトップページボタン -->
+        <div class="news-navigation container my-5 text-center">
+            <a href="#" class="btn btn-outline-primary mx-2">次のニュース</a>
+            <a href="../index.html" class="btn btn-outline-secondary mx-2">ホームに戻る</a>
+            <a href="news4.html" class="btn btn-outline-primary mx-2">前のニュース</a>
+        </div>
+    </main>
+
+    
+
+
+    <!-- フッター -->
+    <footer class="w-100">
+        <div class="container">
+            <p class="d-flex justify-content-center align-items-center">
+                <!-- Instagramアイコン -->
+                <a href="https://www.instagram.com/labo_wakamono?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="text-white mx-3">
+                    <i class="fab fa-instagram"></i><span> Instagram</span>
+                </a>
+                <!-- LINEアイコン -->
+                <a href="https://lin.ee/5xKUaVV" target="_blank" class="text-white mx-3">
+                    <i class="fab fa-line"></i><span>LINE</span>
+                </a> 
+                <!-- DMアイコン (メールリンク) -->
+                <a href="mailto:wakamono2024.kyushu@gmail.com" class="text-white mx-3">
+                    <i class="fas fa-envelope"></i><span>DM</span>
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</body>
+</html>

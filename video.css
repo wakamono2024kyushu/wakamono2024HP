@@ -1,0 +1,75 @@
+/* 全体のリセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 背景と全体のレイアウト */
+body {
+    font-family: "Zen Maru Gothic", serif;
+    min-height: 100vh;
+    background-color:  hwb(169 81% 11%);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 中央揃え */
+}
+
+/* 動画ギャラリーのレイアウト */
+
+main h1 {
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+  
+  /* Bootstrapカードのカスタマイズ */
+  .card {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+  }
+  
+  .card-body {
+    padding: 20px;
+    background: #ffffff;
+  }
+  
+  .card-title {
+    font-family: "Noto Serif JP", serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 0.95rem;
+    color: #666666;
+    line-height: 1.5;
+  }
+  
+  /* レスポンシブ対応 */
+  @media (max-width: 768px) {
+    .card iframe {
+      height: 180px;
+    }
+    .card-title {
+      font-size: 1rem;
+    }
+    .card-text {
+      font-size: 0.9rem;
+    }
+  }

@@ -14,6 +14,35 @@ body {
     align-items: center; /* 中央揃え */
 }
 
+/* インスタグラムボタンのデザイン */
+a.instagram-btn {
+  display: inline-flex;
+  padding: 10px 20px;
+  background-color: #e1306c; /* インスタグラムのブランドカラー */
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-right: 70px;
+  margin-left: 60px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+a.instagram-btn i {
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+/* ホバー時のエフェクト */
+a.instagram-btn:hover {
+  background-color: #db90bb24;
+  transform: scale(1.05); /* ホバー時に少し拡大 */
+}
+
+
 /* 特定のクラスに対して色を変更 */
 .custom-heading {
     color: #444 !important; /* 見出しの色を#444に強制的に変更 */
